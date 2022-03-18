@@ -20,7 +20,7 @@
 
 #### run "git clone https://github.com/Olamarx/Microverse-Portfolio-setup.git"
 
-#### Kindly don't run the
+#### Kindly don't run the quotation mark with it.
 
 ## Author
 
