@@ -302,14 +302,14 @@ nav {
 }
 
 .about-me {
-  width: 94%;
+  width: 100%;
   margin-top: 40px;
   padding-top: 120px;
   padding-bottom: 209px;
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
-  background-size: 493px 258px;
-  background-position: bottom right -305px;
+  background-size: 500px 258px;
+  background-position: bottom right -100px;
   margin-left: 20px;
 }
 

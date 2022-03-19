@@ -1,5 +1,7 @@
 
-![This is an image]()
+![This is an image](./images/mob1.jpg)
+![This is an image](./images/mob2.jpg)
+
 #  Microverse' Portfolio Project
 
 > This project is my portfolio project at Microverse and it aims at making me have a reopnsive webpage but starting from the mobile version.
