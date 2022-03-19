@@ -6,6 +6,14 @@ ul {
   padding: 0;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .main-container {
   padding-left: 24px;
   padding-right: 24px;
@@ -203,7 +211,8 @@ nav {
 }
 
 .pro-art-major {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 98%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -215,7 +224,8 @@ nav {
 }
 
 .art {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 98%;
 }
 
@@ -309,16 +319,20 @@ nav {
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
   background-size: 500px 258px;
-  background-position: bottom right -100px;
+  background-position: bottom right -200px;
   margin-left: 20px;
 }
 
 .about-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   margin-left: 40px;
   height: 79px;
   font-size: 72px;
   line-height: 88px;
-  letter-spacing: 0.33px;
+  letter-spacing: 0.23px;
   color: #ff6b00;
 }
 
