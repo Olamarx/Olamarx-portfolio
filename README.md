@@ -1,5 +1,7 @@
-<!-- ![](https://img.shields.io/badge/Microverse-blueviolet) -->
-![This is an image](./images/check.jpg)
+
+![This is an image](./images/mob1.jpg)
+![This is an image](./images/mob2.jpg)
+
 #  Microverse' Portfolio Project
 
 > This project is my portfolio project at Microverse and it aims at making me have a reopnsive webpage but starting from the mobile version.
@@ -14,9 +16,13 @@
 
 [Live Demo Link]()
 
+## Set-up linters in your local machine
 
 ## Getting Started
 
+#### run "git clone https://github.com/Olamarx/Microverse-Portfolio-setup.git"
+
+#### Kindly don't run the quotation mark with it.
 
 ## Author
 
@@ -32,7 +38,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Olamarx/Microverse-Portfolio-setup/issues).
 
 ## Show your support
 
