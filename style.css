@@ -7,7 +7,7 @@ ul {
 }
 
 html {
-  width: 500px;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -67,6 +67,8 @@ nav {
   width: 327px;
   margin: 122px 22px;
 }
+
+
 
 .section-header-title {
   display: flex;
@@ -414,4 +416,78 @@ nav {
   color: #fff;
   font-family: "InaiMathi", serif;
   font-style: normal;
+}
+
+.form-section-content{
+  padding: 100px;
+  width: 327px;
+  height: 216px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section-content-h3{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+    color: #172B4D;
+}
+
+form ul{
+  list-style: none;
+  display: flex;
+flex-direction: column;
+  gap: 20px;
+}
+
+input{
+  
+  border: 0;
+  /* border-bottom: 1px solid black; */
+  opacity: 0.5;
+  width: 327px;
+}
+
+.hr-form{
+  width: 327px;
+  height: 1px;
+  background: #DBD8D7;
+
+}
+
+input:focus{
+  border: ;
+
+}
+
+.form-textarea{
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #3C3A39;
+
+background: #FBF8F7;
+resize: none;
+
+height: 114px;
+width: 95%;
+margin: 0 auto;
+}
+
+.form-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
