@@ -453,13 +453,12 @@ flex-direction: column;
 input{
   
   border: 0;
-  /* border-bottom: 1px solid black; */
   opacity: 0.5;
   width: 327px;
 }
 
 .hr-form{
-  width: 327px;
+  width: 100%;
   height: 1px;
   background: #DBD8D7;
 
@@ -470,24 +469,26 @@ input:focus{
 
 }
 
-.form-textarea{
-  font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 24px;
-color: #3C3A39;
-
-background: #FBF8F7;
-resize: none;
-
-height: 114px;
-width: 95%;
-margin: 0 auto;
+.text-area-container {
+  display: flex;
+  justify-content: center;
 }
 
-.form-btn{
+.form-textarea{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+  background: #FBF8F7;
+  width: 100%;
+}
+
+
+
+/* .form-btn{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
