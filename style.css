@@ -497,6 +497,12 @@ form button {
   padding: 10px;
 }
 
+form button:hover {
+  color: #ff6b00;
+  background-color: #fff;
+  border: 1px solid #f56b00;
+}
+
 footer {
   height: 30vh;
   display: flex;
