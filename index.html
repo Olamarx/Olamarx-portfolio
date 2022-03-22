@@ -222,17 +222,14 @@
       </section> 
       <form action="https://formspree.io/f/xnqwzypz" method="post">
         <ul>
-          <li>
-            <input type="text" name="name" placeholder="Full Name">
+          <li class="form-li">
+            <input type="text" name="name" placeholder="Full Name" required maxlength="30">
           </li>
-          <hr class="hr-form">
-          <li>
-            <input type="email" name="email" placeholder="Email Address">
-          </li>
-          <hr class="hr-form">
-          
+          <li class="form-li">
+            <input type="email" name="email" placeholder="Email Address" required>
+          </li>      
           <li class="text-area-container">
-            <textarea class="form-textarea" name="text" id="text" cols="1" rows="5">Enter text here</textarea>
+            <textarea class="form-textarea" name="text" id="text" cols="1" rows="5" required maxlength="500" placeholder="Enter text here"></textarea>
         </li>
         <li>
             <button name="submit" type="submit">Get in touch</button>
