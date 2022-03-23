@@ -26,7 +26,13 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+  align-items: center;
 }
+
+.main-container .main-navbar-logo, .main-container .main-navbar-menu{
+  list-style: none;
+}
+
 
 nav {
   width: 98%;
@@ -44,12 +50,25 @@ nav {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
+  text-decoration: none;
+
+
+}
+
+.logo-portfolio-right-content{
+  text-decoration: none;
 }
 
 .main-navbar-menu {
   padding-right: 50px;
+}
+
+.righthand-of-logo{
+  margin-right: 30px;
+  text-decoration: none;
+  
 }
 
 .section-header-box {
@@ -64,9 +83,18 @@ nav {
 }
 
 .section-header-content {
+
   width: 327px;
-  margin: 122px 22px;
+  margin: 100px 22px;
+
+  
 }
+
+.section-header-content{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .section-header-title {
   display: flex;
@@ -497,6 +525,10 @@ form button {
   padding: 10px;
 }
 
+.righthand-of-logo{
+  display: none;
+}
+
 form button:hover {
   color: #ff6b00;
   background-color: #fff;
@@ -523,4 +555,105 @@ footer ul {
 
 footer img {
   width: 1.5rem;
+}
+
+
+@media (min-width: 400px) {
+  body {
+    overflow-x: visible;
+  }
+
+.main-navbar-menu img{
+  visibility: hidden;
+}
+
+  .righthand-of-logo{      /* Come back to the listing style and the align item */
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    list-style: none;
+  }
+
+  
+
+  .main-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .righthand-of-logo img{
+    visibility: visible;
+    list-style: none;
+  }
+
+  .logo-portfolio-right-content{
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+      color: #fff;
+  text-decoration: none;
+      
+  }
+
+  .main-container a .righthand-of-logo{
+    text-decoration: noneg;
+  }
+
+  .section-header-box {
+    background-size: 630px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: bottom right -110px;
+    /* background-image: url("./images/header-illustration.png"); */
+  }
+
+  .section-header-box{
+    display: flex;
+  }
+
+  .section-header-content-except-icons{
+    width: 400px;
+  }
+
+  .section-header-content{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  .social-media-link{
+    display: flex;
+    height: 250px;
+
+    flex-direction: column;
+    /* background: #CFCFCF; */
+  }
+
+  .section-header-content {
+    width: 420px;
+  }
+
+  
+.main-navbar-logo {
+  margin-left: 100px;
+
+}
+
+  .w-container{
+  
+  }
+
+  /* .container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  } */
+
+  .hr{
+
+  }
 }
