@@ -168,7 +168,8 @@ nav {
 
 .image-paragraph {
   display: flex;
-  flex-direction: column;
+
+  /* flex-direction: co; */
   justify-content: center;
   padding: 20px;
   margin: 20px;
