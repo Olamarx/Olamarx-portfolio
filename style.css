@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@700&display=swap');
+
 body,
 h1,
 h2,
@@ -89,7 +91,7 @@ nav {
 .section-header-title {
   display: flex;
   width: 327px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 55px;
@@ -140,14 +142,10 @@ nav {
 
 .section-under-my-recent-works {
   display: grid;
-
-  /* grid-template-columns: 1fr; */
-
-  /* border: 2px solid green; */
 }
 
 .my-work {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -155,11 +153,13 @@ nav {
   display: grid;
   justify-content: center;
   margin-top: 170px;
+  margin-bottom: 60px;
 }
 
 .hr {
   border: 1px dotted #000;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
+  width: 327px;
 }
 
 .w-container-img {
@@ -179,7 +179,7 @@ nav {
 }
 
 .multi-column-h1 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -193,7 +193,7 @@ nav {
 .multi-column-det {
   display: grid;
   justify-content: center;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -229,7 +229,7 @@ nav {
   margin-top: 15px;
   background: #ff6b00;
   color: #fff;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -265,7 +265,7 @@ nav {
 
 .art-data {
   display: grid;
-  font-family: "Crete Round", serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   width: 300px;
   height: 30px;
@@ -288,7 +288,7 @@ nav {
   height: 60px;
   padding-top: 40px;
   margin-left: 40px;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -328,7 +328,7 @@ nav {
   width: 93%;
   height: 48px;
   background: #ff6b00;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -362,11 +362,12 @@ nav {
 }
 
 .about-header {
-  /* height: 90px; */
   width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-weight: 400;
+  font-family: 'Crete Round', sans-serif;
   margin-left: 40px;
   height: 79px;
   font-size: 72px;
@@ -395,7 +396,7 @@ nav {
 }
 
 .hello-software {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -403,11 +404,6 @@ nav {
   line-height: 24px;
   color: #f4f5f7;
 }
-
-/* .separater {
-  border: 1px solid #fff;
-  margin-bottom: 136px;
-} */
 
 .img-line-div {
   display: flex;
@@ -434,7 +430,7 @@ nav {
 .knowledge {
   font-size: 22px;
   line-height: 43px;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #fff;
@@ -448,7 +444,7 @@ nav {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  font-family: "InaiMathi", serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
 }
 
@@ -565,6 +561,8 @@ footer img {
   width: 1.5rem;
 }
 
+/* Media Query Stars Here */
+
 @media (min-width: 768px) {
   body {
     overflow-x: visible;
@@ -574,7 +572,7 @@ footer img {
     visibility: hidden;
   }
 
-  .righthand-of-logo {      /* Come back to the listing style and the align item */
+  .righthand-of-logo {
     visibility: visible;
     display: flex;
     align-items: center;
@@ -582,12 +580,9 @@ footer img {
     list-style: none;
     gap: 30px;
     height: 100%;
-
-    /* border: 2px solid green; */
   }
 
   .logo-right-whole {
-    /* border: 2px solid pink; */
     text-decoration: none;
     display: flex;
     text-align: center;
@@ -596,8 +591,6 @@ footer img {
   .main-container {
     display: flex;
     align-items: center;
-
-    /* border: 2px solid red; */
   }
 
   .righthand-of-logo img {
@@ -615,10 +608,6 @@ footer img {
     text-decoration: none;
   }
 
-  /* .main-container a .righthand-of-logo {
-    text-decoration: noneg;
-  } */
-
   .section-header-box {
     background-size: 630px;
     height: 700px;
@@ -626,8 +615,6 @@ footer img {
     display: flex;
     background-repeat: no-repeat;
     background-position: bottom right -110px;
-
-    /* background-image: url("./images/header-illustration.png"); */
   }
 
   .section-header-content-except-icons {
@@ -638,8 +625,6 @@ footer img {
     display: flex;
     height: 250px;
     flex-direction: column;
-
-    /* background: #CFCFCF; */
   }
 
   .section-header-content {
@@ -656,17 +641,12 @@ footer img {
   .my-work {
     display: flex;
     align-items: center;
-
-    /* border: red 5px solid; */
     margin: 0;
   }
 
   .w-container {
     display: flex;
     margin-top: 170px;
-
-    /* border: green 5px solid; */
-
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -677,10 +657,9 @@ footer img {
   }
 
   .w-container-img {
+    margin-left: 20px;
     display: flex;
     align-items: center;
-
-    /* border: red 5px solid; */
   }
 
   .img-pd {
@@ -704,37 +683,23 @@ footer img {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-
-    /* padding: 2px solid green; */
     width: 448px;
-
-    /* margin-right: 400px; */
   }
 
   .image-paragraph {
     display: flex;
-
-    /* gap: 15px; */
-
-    /* align-items: center; */
     justify-content: center;
     column-gap: 30px;
   }
 
   .section-under-my-recent-works {
-    /* display: inline-flex; */
-
     display: grid;
     grid-template-columns: auto auto auto;
-
-    /* border: 2px solid green; */
-
-    /* width: 1000px; */
-
-    /* padding: 50px; */
-
-    /* flex-wrap: wrap; */
     justify-content: center;
+  }
+
+  .section-header-title {
+    font-family: 'Crete Round', sans-serif;
   }
 
   .see-project-desktop-version-1 {
@@ -753,8 +718,6 @@ footer img {
     padding-top: 0;
     padding-bottom: 0;
     background-image: url(./images/ligther-bg.png);
-
-    /* background-size: 93% 435px; */
   }
 
   .hide-in-desktop-view {
@@ -799,27 +762,29 @@ footer img {
     background-position: center right -0;
     margin-left: 0;
     margin-right: 650px;
-
-    /* border: 5px solid green; */
   }
 
   .about-header {
-    /* border: 5px solid red; */
     height: 90px;
   }
 
   .about-me-gen {
-    /* padding-right: 500px; */
     width: 500px;
+    margin-left: 142px;
   }
 
   .ul-title-of-tech {
     display: grid;
     grid-template-columns: auto auto auto;
-
-    /* margin-right: 0; */
     padding: 200px;
     column-gap: 50px;
+  }
+
+  form ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   .form-section {
@@ -835,8 +800,6 @@ footer img {
     padding: 0 100px 100px 100px;
     width: 327px;
     height: 200px;
-
-    /* align-items: center; */
     margin: 0;
   }
 
@@ -848,5 +811,14 @@ footer img {
     line-height: 44px;
     text-align: start;
     color: #172b4d;
+  }
+
+  .get-in-touch {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .form-textarea {
+    height: 114px;
   }
 }
