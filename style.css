@@ -169,12 +169,10 @@ nav {
 .image-paragraph {
   display: flex;
 
-  /* flex-direction: co; */
   justify-content: center;
   padding: 20px;
   margin: 20px;
 }
-
 .img-pd {
   display: grid;
   width: 100%;
