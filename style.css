@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500&family=Poppins&family=Roboto:wght@700&display=swap');
+
 body,
 h1,
 h2,
@@ -26,6 +28,27 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+  align-items: center;
+}
+
+.main-navbar-logo {
+  list-style: none;
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-navbar-menu {
+  padding-right: 50px;
+}
+
+.main-container .main-navbar-logo,
+.main-container .main-navbar-menu {
+  list-style: none;
 }
 
 nav {
@@ -38,18 +61,13 @@ nav {
   padding: 10px;
 }
 
-.main-navbar-logo {
-  list-style: none;
-  display: flex;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  font-family: Roboto, sans-serif;
-  color: #fff;
+.logo-portfolio-right-content {
+  text-decoration: none;
 }
 
-.main-navbar-menu {
-  padding-right: 50px;
+.righthand-of-logo {
+  margin-right: 30px;
+  text-decoration: none;
 }
 
 .section-header-box {
@@ -65,13 +83,15 @@ nav {
 
 .section-header-content {
   width: 327px;
-  margin: 122px 22px;
+  margin: 100px 22px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-header-title {
   display: flex;
   width: 327px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 55px;
@@ -120,13 +140,12 @@ nav {
   padding: 0 10px;
 }
 
-.container-2 {
+.section-under-my-recent-works {
   display: grid;
-  grid-template-columns: 1fr;
 }
 
 .my-work {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -134,27 +153,35 @@ nav {
   display: grid;
   justify-content: center;
   margin-top: 170px;
+  margin-bottom: 60px;
 }
 
 .hr {
   border: 1px dotted #000;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
+  width: 327px;
+}
+
+.w-container-img {
+  display: none;
 }
 
 .image-paragraph {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
   margin: 20px;
 }
 
 .img-pd {
   display: grid;
-  width: 320px;
+  width: 100%;
   height: 400px;
 }
 
 .multi-column-h1 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -168,7 +195,7 @@ nav {
 .multi-column-det {
   display: grid;
   justify-content: center;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -204,7 +231,7 @@ nav {
   margin-top: 15px;
   background: #ff6b00;
   color: #fff;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -240,7 +267,7 @@ nav {
 
 .art-data {
   display: grid;
-  font-family: "Crete Round", serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   width: 300px;
   height: 30px;
@@ -252,6 +279,10 @@ nav {
   margin-top: 20px;
 }
 
+.art-data-desktop-view {
+  display: none;
+}
+
 .daily-s-con {
   display: grid;
   justify-content: center;
@@ -259,7 +290,7 @@ nav {
   height: 60px;
   padding-top: 40px;
   margin-left: 40px;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -299,7 +330,7 @@ nav {
   width: 93%;
   height: 48px;
   background: #ff6b00;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -337,6 +368,8 @@ nav {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-weight: 400;
+  font-family: 'Crete Round', sans-serif;
   margin-left: 40px;
   height: 79px;
   font-size: 72px;
@@ -365,7 +398,7 @@ nav {
 }
 
 .hello-software {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -374,9 +407,10 @@ nav {
   color: #f4f5f7;
 }
 
-.separater {
-  border: 1px solid #fff;
-  margin-bottom: 136px;
+.img-line-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .techs {
@@ -398,7 +432,7 @@ nav {
 .knowledge {
   font-size: 22px;
   line-height: 43px;
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #fff;
@@ -412,7 +446,7 @@ nav {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  font-family: "InaiMathi", serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
 }
 
@@ -497,6 +531,10 @@ form button {
   padding: 10px;
 }
 
+.righthand-of-logo-2 {
+  display: none;
+}
+
 form button:hover {
   color: #ff6b00;
   background-color: #fff;
@@ -523,4 +561,277 @@ footer ul {
 
 footer img {
   width: 1.5rem;
+}
+
+/* Media Query Stars Here */
+
+@media (min-width: 768px) {
+  body {
+    overflow-x: visible;
+  }
+
+  .main-navbar-menu img {
+    visibility: hidden;
+  }
+
+  .righthand-of-logo {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+    height: 100%;
+  }
+
+  .logo-right-whole {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+  }
+
+  .main-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .righthand-of-logo img {
+    visibility: visible;
+    list-style: none;
+  }
+
+  .logo-portfolio-right-content {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .section-header-box {
+    background-size: 630px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: bottom right -110px;
+  }
+
+  .section-header-content-except-icons {
+    width: 400px;
+  }
+
+  .social-media-link {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+  }
+
+  .section-header-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    width: 420px;
+  }
+
+  .main-navbar-logo {
+    margin-left: 100px;
+  }
+
+  .my-work {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .w-container {
+    display: flex;
+    margin-top: 170px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .w-container-img {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .img-pd {
+    width: 684px;
+    height: 448px;
+  }
+
+  .multi-column-h1 {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin-top: 0;
+  }
+
+  .multi-column-det {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    width: 448px;
+  }
+
+  .image-paragraph {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  .section-under-my-recent-works {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+
+  .section-header-title {
+    font-family: 'Crete Round', sans-serif;
+  }
+
+  .see-project-desktop-version-1 {
+    width: 369px;
+  }
+
+  .pro-art-major {
+    width: 369px;
+    height: 435px;
+  }
+
+  .pro-art-major-1 {
+    display: flex;
+    justify-content: end;
+    background-size: 369px 435px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url(./images/ligther-bg.png);
+  }
+
+  .hide-in-desktop-view {
+    visibility: hidden;
+  }
+
+  .pro-art-major-2,
+  .pro-art-major-5 {
+    background-size: 369px 435px;
+    background-position-x: center;
+    margin-left: 10px;
+    background-image: url(./images/pro-art-major-2.png);
+  }
+
+  .pro-art-major-4 {
+    background-size: 369px 435px;
+    background-image: url(./images/darker-bg.png);
+  }
+
+  .pro-art-major-3,
+  .pro-art-major-6 {
+    background-size: 369px 435px;
+    background-image: url(./images/pro-art-major-3.png);
+  }
+
+  .see-project-desktop-version {
+    display: none;
+  }
+
+  .art-data-2 {
+    margin-top: 120px;
+  }
+
+  .about-me {
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 120px;
+    padding-bottom: 209px;
+    background-image: url(./images/Group.png);
+    background-repeat: no-repeat;
+    background-size: 500px 358px;
+    background-position: center right -0;
+    margin-left: 0;
+    margin-right: 650px;
+  }
+
+  .about-header {
+    height: 90px;
+  }
+
+  .about-me-gen {
+    width: 500px;
+    margin-left: 142px;
+  }
+
+  .ul-title-of-tech {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 200px;
+    column-gap: 50px;
+  }
+
+  form ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .form-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 100px 100px 100px;
+    width: 327px;
+    height: 200px;
+    margin: 0;
+  }
+
+  .form-section-content-h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: start;
+    color: #172b4d;
+  }
+
+  .get-in-touch {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .form-textarea {
+    height: 114px;
+    width: 684px;
+    margin: 0;
+  }
+
+  .form-li {
+    height: 50px;
+    border-bottom: 1px solid #dbd8d7;
+  }
+
+  .form-li input {
+    width: 684px;
+  }
 }
