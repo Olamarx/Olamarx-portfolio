@@ -237,10 +237,11 @@ nav {
   font-size: 17px;
   line-height: 24px;
   border: none;
+  transition: all 0.9s ease-out;
 }
 
 .see-pro:hover {
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
@@ -338,6 +339,7 @@ nav {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+  transition: all 0.5s ease-out;
 }
 
 .see-project:hover {
@@ -388,10 +390,11 @@ nav {
   background: #f55800;
   color: #fff;
   border: 1px solid #f56b00;
+  transition: all 0.5s ease-out;
 }
 
 .button:hover {
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
@@ -529,6 +532,7 @@ form button {
   text-align: center;
   color: #fff;
   padding: 10px;
+  transition: all 0.5s ease-out;
 }
 
 .righthand-of-logo-2 {
@@ -608,6 +612,13 @@ footer img {
     line-height: 20px;
     color: #fff;
     text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+
+  .logo-portfolio-right-content:hover {
+    transform: scale(1.5);
+    border-bottom: #fff solid 2px;
   }
 
   .section-header-box {
@@ -627,6 +638,16 @@ footer img {
     display: flex;
     height: 250px;
     flex-direction: column;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-duration: 0.5s;
+  }
+
+  .social-media-link li:hover {
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-duration: 0.5s;
   }
 
   .section-header-content {
@@ -638,6 +659,26 @@ footer img {
 
   .main-navbar-logo {
     margin-left: 100px;
+    animation-duration: 5s;
+    animation-name: joedoe;
+    animation-iteration-count: 2;
+    transition: all 0.9s ease-in-out;
+  }
+
+  @keyframes joedoe {
+    from {
+      margin-left: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+
+      /* height: 30%; */
+      overflow: hidden;
+    }
   }
 
   .my-work {
@@ -686,6 +727,31 @@ footer img {
     font-size: 20px;
     line-height: 28px;
     width: 448px;
+    animation-duration: 5s;
+    animation-name: slider;
+    animation-iteration-count: 3;
+
+    /* transition: all 0.9s ease-in-out; */
+  }
+
+  @keyframes slider {
+    from {
+      margin-left: 100%;
+      width: 30%;
+      height: 1%;
+      overflow: hidden;
+
+      /* transition: all 0.9s ease-in-out; */
+    }
+
+    to {
+      margin-left: 0%;
+      width: 50%;
+      height: 30%;
+      overflow: hidden;
+
+      /* transition: all 0.9s ease-in-out; */
+    }
   }
 
   .image-paragraph {
@@ -765,6 +831,29 @@ footer img {
     background-position: center right -0;
     margin-left: 0;
     margin-right: 650px;
+  }
+
+  .section-header-text-description {
+    animation-duration: 5s;
+    animation-name: sliderHeader;
+    animation-iteration-count: 2;
+    transition: all 0.9s ease-in-out;
+  }
+
+  @keyframes sliderHeader {
+    from {
+      margin-left: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+
+      /* height: 30%; */
+      overflow: hidden;
+    }
   }
 
   .about-header {
