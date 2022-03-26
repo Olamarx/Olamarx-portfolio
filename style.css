@@ -645,6 +645,9 @@ footer img {
 
   .social-media-link li:hover {
     transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-duration: 0.5s;
   }
 
   .section-header-content {
