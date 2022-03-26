@@ -237,6 +237,7 @@ nav {
   font-size: 17px;
   line-height: 24px;
   border: none;
+  transition: all 0.5s ease-out;
 }
 
 .see-pro:hover {
@@ -338,6 +339,8 @@ nav {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+  transition: all 0.5s ease-out;
+
 }
 
 .see-project:hover {
@@ -388,10 +391,12 @@ nav {
   background: #f55800;
   color: #fff;
   border: 1px solid #f56b00;
+  transition: all 0.5s ease-out;
+
 }
 
 .button:hover {
-  transition: all 0.2s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
@@ -529,6 +534,8 @@ form button {
   text-align: center;
   color: #fff;
   padding: 10px;
+  transition: all 0.5s ease-out;
+
 }
 
 .righthand-of-logo-2 {
@@ -686,6 +693,25 @@ footer img {
     font-size: 20px;
     line-height: 28px;
     width: 448px;
+  }
+
+  .multi-column-det{
+    animation-duration: 3s;
+    animation-name: slider;
+    animation-iteration-count: 2;
+  }
+
+  @keyframes slider{
+    from{
+    margin-left: 100%;
+    width: 200%;
+  }
+
+   to {
+    margin-left: 0%;
+    width: 50%;
+  }
+
   }
 
   .image-paragraph {
