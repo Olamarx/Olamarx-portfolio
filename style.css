@@ -642,7 +642,7 @@ footer img {
 
   .main-navbar-logo {
     margin-left: 100px;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: joedoe;
     animation-iteration-count: 2;
     transition: all 0.9s ease-in-out;
@@ -710,16 +710,21 @@ footer img {
     font-size: 20px;
     line-height: 28px;
     width: 448px;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slider;
-    animation-iteration-count: 2;
+    animation-iteration-count: 3;
+
+    /* transition: all 0.9s ease-in-out; */
   }
 
   @keyframes slider {
     from {
       margin-left: 100%;
-      width: 100%;
+      width: 30%;
+      height: 1%;
       overflow: hidden;
+
+      /* transition: all 0.9s ease-in-out; */
     }
 
     to {
@@ -727,6 +732,8 @@ footer img {
       width: 50%;
       height: 30%;
       overflow: hidden;
+
+      /* transition: all 0.9s ease-in-out; */
     }
   }
 
@@ -810,7 +817,7 @@ footer img {
   }
 
   .section-header-text-description {
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: sliderHeader;
     animation-iteration-count: 2;
     transition: all 0.9s ease-in-out;
