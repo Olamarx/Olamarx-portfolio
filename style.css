@@ -616,10 +616,11 @@ footer img {
     transition-duration: 0.5s;
   }
 
-  .logo-portfolio-right-content:hover{
+  .logo-portfolio-right-content:hover {
     transform: scale(1.5);
     border-bottom: #fff solid 2px;
   }
+
   .section-header-box {
     background-size: 630px;
     height: 870px;
@@ -639,11 +640,13 @@ footer img {
     flex-direction: column;
     transition-property: all;
     transition-duration: 2s;
+    transition-duration: 0.5s;
   }
 
-  .social-media-link li:hover{
+  .social-media-link li:hover {
     transform: scale(1.5);
   }
+
   .section-header-content {
     display: flex;
     flex-direction: row-reverse;
