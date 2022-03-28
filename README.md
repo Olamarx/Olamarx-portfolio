@@ -1,10 +1,12 @@
+## Desktop Version of the site
+![This is an image](./images/destop.jpg)
 
-![This is an image](./images/mob1.jpg)
-![This is an image](./images/mob2.jpg)
+## Mobile Version of the site
+![This is an image](./images/mobile.jpg)
 
 #  Microverse' Portfolio Project
 
-> This project is my portfolio project at Microverse and it aims at making me have a reopnsive webpage but starting from the mobile version.
+> ### This project is my portfolio project at Microverse and it aims at making me have a reopnsive webpag. It is responsive for the mobile version and the desktop version.
 
 
 ## Built by Olaoluwa Owoeye (Olamarx)
@@ -12,9 +14,9 @@
 - HTML
 - CSS
 
-## Live Demo (I paste the live demo once i get the repo working)
+## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://olamarx.github.io/Olamarx-portfolio/)
 
 ## Set-up linters in your local machine
 
