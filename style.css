@@ -24,6 +24,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .main-container {
   padding-left: 20px;
   padding-right: 20px;
@@ -696,7 +697,7 @@ footer img {
     visibility: hidden;
   } */
 
-  /* .righthand-of-logo {
+  .righthand-of-logo {
     visibility: visible;
     display: flex;
     align-items: center;
@@ -704,7 +705,7 @@ footer img {
     list-style: none;
     gap: 30px;
     height: 100%;
-  } */
+  } 
 
   .logo-right-whole {
     text-decoration: none;
