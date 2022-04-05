@@ -55,8 +55,6 @@ const popupContent = {
   }
 }
 
- // 
-
 
 
 
@@ -130,6 +128,8 @@ seeProjectBtn.addEventListener('click', function() {
 <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
 <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
 </ul>
+
+
 <div class="popup-container">
 <div class="popup-image-and-content-container">
 <div class="popup-image-container">
