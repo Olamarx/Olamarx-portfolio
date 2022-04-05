@@ -9,8 +9,12 @@ menu.addEventListener('click', () => {
   sidebar.classList.toggle('show-sidebar');
   addToListing.classList.add('add-to-listing');
   removeEnve.style.display = 'none';
+
+
 });
 
 closeMenu.addEventListener('click', () => {
   sidebar.classList.remove('show-sidebar');
+  addToListing.classList.remove('ul-listing')
+  addToListing.classList.remove('add-to-listing')
 });

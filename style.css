@@ -638,11 +638,18 @@ footer img {
   flex-direction: row-reverse;
 }
 
-
-
-.hide {
-  display: none;
+.portfolio-logo {
+  align-items: flex-start;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  margin-top: 100px;
 }
+
 
 .show-sidebar {
   transform: translate(0);
@@ -671,7 +678,7 @@ footer img {
 }
 
 .add-to-listing li {
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 
