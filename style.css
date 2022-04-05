@@ -574,7 +574,6 @@ footer img {
 /* Sidebar */
 
 .menu {
-  position: absolute;
   width: 14px;
   height: 14px;
   background: transparent;
@@ -1067,4 +1066,9 @@ footer img {
     display: flex;
     gap: 40px;
   }
+}
+
+
+@media screen and (width: 768px) {
+  nav
 }
