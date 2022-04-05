@@ -697,7 +697,8 @@ footer img {
 
 /* Media Query Stars Here */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
   body {
     overflow-x: visible;
   }
@@ -1069,6 +1070,117 @@ footer img {
 }
 
 
-@media screen and (width: 768px) {
-  nav
+@media screen and (max-width: 768px) {
+  
+/* Sidebar */
+
+  .menu {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border-color: transparent;
+    color: #fff5e1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  .menu:hover {
+    color: var(--clr-primary-7);
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .close-menu {
+    background: transparent;
+    border-color: transparent;
+    color: #fff5e1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    left: 6px;
+    top: 6px;
+    border-radius: 0;
+    margin-top: 30px;
+  }
+
+  .sidebar {
+    position: absolute;
+    height: 755px;
+    width: 100%;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 57px;
+    background-color: #3c3a39;
+    row-gap: 1rem;
+
+    /* box-shadow: #3c3a39; */
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+
+  .portfolio-logo {
+    align-items: flex-start;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff5e1;
+    margin-top: 100px;
+  }
+
+
+  .show-sidebar {
+    transform: translate(0);
+  }
+
+  .main-navbar-menu {
+    padding-right: 50px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .add-to-listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: flex-start;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff5e1;
+    margin-top: 100px;
+  }
+
+  .add-to-listing li {
+    margin-left: 80px;
+  } 
+
+
+
 }
