@@ -1,7 +1,6 @@
 const menu = document.querySelector('.menu');
 const closeMenu = document.querySelector('.close-menu');
 const sidebar = document.querySelector('.sidebar');
-// const righthandOfLogo = document.querySelector('.righthand-of-logo');
 const addToListing = document.querySelector('.ul-listing');
 const navItems = document.querySelectorAll('.navitem-sidebar');
 const removeEnve = document.querySelector('.logo-portfolio-right-content-2');

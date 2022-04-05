@@ -692,10 +692,6 @@ footer img {
     visibility: hidden;
   }
 
-  /* .righthand-of-logo {
-    visibility: hidden;
-  } */
-
   .righthand-of-logo {
     visibility: visible;
     display: flex;
@@ -793,8 +789,6 @@ footer img {
     to {
       margin-left: 0%;
       width: 100%;
-
-      /* height: 30%; */
       overflow: hidden;
     }
   }
@@ -848,8 +842,6 @@ footer img {
     animation-duration: 5s;
     animation-name: slider;
     animation-iteration-count: 3;
-
-    /* transition: all 0.9s ease-in-out; */
   }
 
   @keyframes slider {
@@ -858,8 +850,6 @@ footer img {
       width: 30%;
       height: 1%;
       overflow: hidden;
-
-      /* transition: all 0.9s ease-in-out; */
     }
 
     to {
@@ -867,8 +857,6 @@ footer img {
       width: 50%;
       height: 30%;
       overflow: hidden;
-
-      /* transition: all 0.9s ease-in-out; */
     }
   }
 
@@ -968,8 +956,6 @@ footer img {
     to {
       margin-left: 0%;
       width: 100%;
-
-      /* height: 30%; */
       overflow: hidden;
     }
   }
@@ -1108,8 +1094,6 @@ footer img {
     bottom: 57px;
     background-color: #3c3a39;
     row-gap: 1rem;
-
-    /* box-shadow: #3c3a39; */
     transition: all 0.3s linear;
     transform: translate(-100%);
     display: flex;
@@ -1140,15 +1124,6 @@ footer img {
   }
 
   .navitem-sidebar a {
-    /* display: flex; */
-
-    /* flex-direction: column; */
-
-    /* justify-content: flex-start; */
-
-    /* gap: 20px; */
-
-    /* align-items: flex-start; */
     list-style: none;
     font-family: 'Inter', sans-serif;
     font-style: normal;
