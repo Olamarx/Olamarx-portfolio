@@ -612,7 +612,7 @@ footer img {
 .sidebar {
   position: absolute;
   height: 755px;
-  width: auto;
+  width: 100%;
   border-radius: 0;
   left: 0;
   right: 0;
@@ -628,6 +628,8 @@ footer img {
   justify-content: space-around;
   flex-direction: row-reverse;
 }
+
+
 
 .hide {
   display: none;
