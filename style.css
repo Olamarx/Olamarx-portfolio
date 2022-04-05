@@ -696,43 +696,61 @@ footer img {
 
 .pop-up-header-times-button {
   background-color: red;
-  /* width: 500px; */
-  /* height: 800px; */
   height: 989px;
 width: 375px;
+
+
 }
 
+/* .popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
 .pop-up-header-times{
-height: 82px;
-width: 259px;
-
-/* border-radius: nullpx; */
-
+display: flex;
+justify-content: space-between;
 font-family: 'Roboto', sans-serif;
+color: #172B4D;
 font-size: 32px;
 font-weight: 700;
-line-height: 44px;
-letter-spacing: 0em;
-text-align: left;
+}
 
+.popup-close-barr {
+  height: 50px;
+width: 50px;
+border-radius: 0px;
 }
 
 .pop-header-h3-desktop {
   display: none;
 }
 
-.yetunde {
-  width: 30px;
-  height: 100px;
-  background-color: green;
+.html-bootstrap-ruby-on-rails {
+  display: flex;
+  gap: 20px;
 }
 
+.the-listed-btns {
+border-radius: 0px;
+padding: 16px;
+}
 
+.popup-image-and-content-container {
+  background-color: green;
 
+  height: 470px;
+  width: 360px;
+  margin: 40px 0;
+}
 
+.popup-image-container img {
+  width: 311px;
+  height: 220px;
 
-
-
+  /* background-color: purple; */
+}
 
 
 

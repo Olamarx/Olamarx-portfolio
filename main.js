@@ -41,10 +41,15 @@ const popupContent = {
   'headerDesktop': 'Keeping track of hundreds  of components website',
   'closeIcon': './images/times.svg',
   'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-
+    'timeFont': "./images/times.svg",
   'featuredImage': './images/popupImg.svg',
   'liveVersion': '#',
-  'sourceLink': '#'
+  'sourceLink': '#',
+  'buttons': {
+    'html': 'HTML',
+    'bootstrap': 'Bootstrap',
+    'ruby': 'Ruby on rails'
+  }
 }
 
  // 
@@ -129,20 +134,18 @@ seeProjectBtn.addEventListener('click', function() {
   <div class="pop-up-header-times">
   <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
   <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
-  
+  <img class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
 </div>
 
-
-<ul class="html-bootstrap-ruby-on-rails" >
-<li class="list-btn"><button class="the-listed-btns"></button></li>
-<li class="list-btn"> <button class="the-listed-btns"></button> </li>
-<li class="list-btn"> <button class="the-listed-btns"></button></li>
-
+<ul class="html-bootstrap-ruby-on-rails">
+<li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
+<li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
+<li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
 </ul>
-
+<div class="popup-container">
 <div class="popup-image-and-content-container">
 <div class="popup-image-container">
-<img src="" alt="">
+<img src="${popupContent.featuredImage}" alt="Image">
 </div>
 
 <div class="popup-content-description-and-buttons">
@@ -162,6 +165,7 @@ seeProjectBtn.addEventListener('click', function() {
 </div>
 </div>
 
+</div>
 </div>
   
   
