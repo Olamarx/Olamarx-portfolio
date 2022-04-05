@@ -11,22 +11,42 @@
     <header>
     <nav class="main-container">
       <a href="#" class="main-navbar-logo">John Doe</a>
-      <a href="#" class="main-navbar-menu logo-right-whole">
-        <img src="./images/Union.png" alt="Menu"/>
-        <div class="righthand-of-logo righthand-of-logo-2">
-          <h3 class="porfolio-logo logo-portfolio-right-content">
-              Portfolio
-          </h3>
-          <h3 class="about-about logo-portfolio-right-content">
-              About
-          </h3>
-          <h3 class="contact-logo logo-portfolio-right-content">
-              Contact
-          </h3>
-          <img class="logo-portfolio-right-content" src="./images/Union2.svg" alt="Envelop Icon">
-       </div>
+      <a href="#" class="main-navbar-menu logo-right-whole main-navbar-menu-2">
+        <img class="menu" src="./images/Union.png" alt="Menu">
       </a>
-    </nav>
+
+
+      <aside class="sidebar ">
+          <img class="close-menu" src="./images/times.svg" alt="Menu-close">
+
+
+        <!-- Links -->
+        <ul class="ul-listing">
+
+          <li class="porfolio-logo logo-portfolio-right-content navitem-sidebar">
+            <a href="#portfolio"> Portfolio</a> 
+      
+          </li>
+          
+
+          <li class="about-about logo-portfolio-right-content navitem-sidebar">
+            <a href="#about">About</a> 
+          </li>
+
+
+          <li class="contact-logo logo-portfolio-right-content navitem-sidebar">
+            <a href="#contact">Contact</a>  
+          </li>
+
+          <li>
+          <img class="logo-portfolio-right-content logo-portfolio-right-content-2" src="./images/Union2.svg" alt="Envelop Icon">
+        </li>
+        </ul>
+       
+</aside>
+
+
+</nav>
     </header>
     <section class="section-header-box">
       <section class="section-header-content">
@@ -71,7 +91,7 @@
     </section>
 
     <main>
-      <section class="container-2">
+      <section class="container-2" id="portfolio">
 
 
         <div class="w-container">
@@ -221,7 +241,7 @@
 
 
       </section>
-        <section class="about-general">
+        <section class="about-general" id="about">
           <div class="about-me">
             <div class="about-me-gen">
               <h2 class="about-header">About me</h2>
@@ -271,7 +291,7 @@
       
     </main>
 
-    <section class="form-section">
+    <section class="form-section" id="contact">
       <section class="form-section-content">
         <h3 class="form-section-content-h3">
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -314,5 +334,8 @@
     </section>
    
 
+
+    <!-- Javascript file -->
+<script src="./main.js"></script>
   </body>
 </html>
