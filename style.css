@@ -567,9 +567,6 @@ footer img {
   width: 1.5rem;
 }
 
-
-
-
 /* Sidebar */
 
 .menu {
@@ -682,22 +679,7 @@ footer img {
   border-bottom: 2px solid red;
   height: -2px;
   width: 327px;
-
-  /* left: 0px; */
-
-  /* top: 55px; */
-
-  /* border-radius: 0px; */
 }
-
-
-
-
-
-
-
-
-
 
 /* Media Query Stars Here */
 
@@ -751,8 +733,6 @@ footer img {
     transition-property: all;
     transition-duration: 0.5s;
   }
-
-
 
   .logo-portfolio-right-content:hover {
     transform: scale(1.5);
