@@ -11,13 +11,13 @@ ul {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
-
   width: 100%;
   height: 100%;
   margin: 0;
@@ -32,7 +32,6 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
 
 .main-container {
   padding-left: 20px;
@@ -649,7 +648,6 @@ footer img {
   margin-top: 100px;
 }
 
-
 .show-sidebar {
   transform: translate(0);
 }
@@ -677,14 +675,20 @@ footer img {
 }
 
 .add-to-listing li {
-  margin-left: 80px;
+  margin-left: 0;
 }
 
+.navitem-sidebar {
+  border-bottom: 2px solid red;
+  height: -2px;
+  width: 327px;
 
+  /* left: 0px; */
 
+  /* top: 55px; */
 
-
-
+  /* border-radius: 0px; */
+}
 
 
 
@@ -698,13 +702,8 @@ footer img {
 /* Media Query Stars Here */
 
 @media screen and (min-width: 768px) {
-
   body {
     overflow-x: visible;
-  }
-
-  .hide-separator {
-    display: none;
   }
 
   .menu {
@@ -723,7 +722,7 @@ footer img {
     list-style: none;
     gap: 30px;
     height: 100%;
-  } 
+  }
 
   .logo-right-whole {
     text-decoration: none;
@@ -752,6 +751,8 @@ footer img {
     transition-property: all;
     transition-duration: 0.5s;
   }
+
+
 
   .logo-portfolio-right-content:hover {
     transform: scale(1.5);
@@ -1069,10 +1070,8 @@ footer img {
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  
-/* Sidebar */
+  /* Sidebar */
 
   .menu {
     width: 14px;
@@ -1150,7 +1149,6 @@ footer img {
     margin-top: 100px;
   }
 
-
   .show-sidebar {
     transform: translate(0);
   }
@@ -1161,12 +1159,16 @@ footer img {
     align-items: flex-start;
   }
 
-  .add-to-listing {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-    align-items: flex-start;
+  .navitem-sidebar a {
+    /* display: flex; */
+
+    /* flex-direction: column; */
+
+    /* justify-content: flex-start; */
+
+    /* gap: 20px; */
+
+    /* align-items: flex-start; */
     list-style: none;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1178,9 +1180,13 @@ footer img {
   }
 
   .add-to-listing li {
-    margin-left: 80px;
-  } 
+    margin-left: 5px;
+  }
 
-
-
+  .navitem-sidebar {
+    border-bottom: 2px solid red;
+    height: -2px;
+    width: 327px;
+    border-color: #6f6c6b;
+  }
 }
