@@ -688,10 +688,44 @@ footer img {
 
 /* Pop up */
 
+.pop-up-section{
+  display: flex;
+  justify-content: center;
+}
 
 
+.pop-up-header-times-button {
+  background-color: red;
+  /* width: 500px; */
+  /* height: 800px; */
+  height: 989px;
+width: 375px;
+}
 
+.pop-up-header-times{
+height: 82px;
+width: 259px;
 
+/* border-radius: nullpx; */
+
+font-family: 'Roboto', sans-serif;
+font-size: 32px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.pop-header-h3-desktop {
+  display: none;
+}
+
+.yetunde {
+  width: 30px;
+  height: 100px;
+  background-color: green;
+}
 
 
 

@@ -31,16 +31,26 @@ navItems.forEach((navItem) => {
 
 // Pop up onjects
 const popUpSection = document.querySelector('.pop-up-section')
-
+const seeProjectBtn = document.querySelector('.see-pro')
 
 
 // create html tags
 
+const popupContent = {
+  'headerMobile': 'Multi Post Stories',
+  'headerDesktop': 'Keeping track of hundreds  of components website',
+  'closeIcon': './images/times.svg',
+  'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+
+  'featuredImage': './images/popupImg.svg',
+  'liveVersion': '#',
+  'sourceLink': '#'
+}
+
+ // 
 
 
-const div1Popup = document.createElement('div');//main popup to append in section of html with clas pop-up-section
-div1Popup.innerHTML ='<div> </div>'
-div1Popup.classList.add('pop-up-header-times-button','',''); // 
+
 
 const div2Popup = document.createElement('div')
 div2Popup.classList.add('pop-up-header-times')
@@ -100,44 +110,69 @@ faFontGithub.classList.add('fas', 'fa-brands', 'fa-github')
 
 
 
-function popUp() {
-let popupContent = {
-  'headerMobile': 'Multi Post Stories',
-  'headerDesktop': 'Keeping track of hundreds  of components website',
-  'closeIcon': './images/times.svg',
-  'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-
-  'featuredImage': './images/popupImg.svg',
-  'liveVersion': '#',
-  'sourceLink': '#'
-}
-
-function headerAndCloseIcon() {
-let firstAppend = popUpSection.appendChild(div1Popup)
+// function popUp() {
 
 
-}
+// function headerAndCloseIcon() {
+// let firstAppend = popUpSection.appendChild(div1Popup)
+// }
+// }
+
+seeProjectBtn.addEventListener('click', function() {
+  const div1Popup = document.createElement('div');
 
 
+  // ${popupContent['headerMobile']}
 
 
+  div1Popup.innerHTML =`<div>
+  <div class="pop-up-header-times">
+  <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
+  <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
+  
+</div>
 
 
+<ul class="html-bootstrap-ruby-on-rails" >
+<li class="list-btn"><button class="the-listed-btns"></button></li>
+<li class="list-btn"> <button class="the-listed-btns"></button> </li>
+<li class="list-btn"> <button class="the-listed-btns"></button></li>
+
+</ul>
+
+<div class="popup-image-and-content-container">
+<div class="popup-image-container">
+<img src="" alt="">
+</div>
+
+<div class="popup-content-description-and-buttons">
+
+<h5 class="popup-content-description">
+
+</h5>
+
+<div class="see-live-and-source-btns">
+<a href="">  <button>   </button>  </a>
+<a href="">  <button>   </button>  </a>
+</div>
 
 
+<i class="fas fa-brands fa-github"></i>
+<i class="fas fa-solid fa-chart-line"></i>
+</div>
+</div>
 
+</div>
+  
+  
+  
+  
+  
+  
+  </div>`
 
+  div1Popup.classList.add('pop-up-header-times-button');
 
+popUpSection.appendChild(div1Popup);
 
-
-
-
-
-
-
-
-
-
-
-
-}
+});
