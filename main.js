@@ -39,6 +39,7 @@ const popUpSection = document.querySelector('.pop-up-section')
 
 
 const div1Popup = document.createElement('div');//main popup to append in section of html with clas pop-up-section
+div1Popup.innerHTML ='<div> </div>'
 div1Popup.classList.add('pop-up-header-times-button','',''); // 
 
 const div2Popup = document.createElement('div')
@@ -55,6 +56,9 @@ popButtonForThree.classList.add('html-bootstrap-ruby-on-rails')
 
 const listBtn = document.createElement('li')
 popButtonForThree.classList.add('list-btn')
+
+const listBtnAlink = document.createElement('a')
+listBtnAlink.classList.add('list-btn-a-link')
 
 const thelistedBtns = document.createElement('button')
 thelistedBtns.classList.add('the-listed-btns')
@@ -74,12 +78,32 @@ popupContentDescriptionAndButtons.classList.add('popup-content-description-and-b
 const popupContentDescription = document.createElement('h5')
 popupContentDescription.classList.add('popup-content-description')
 
+const seeLiveAndSourceBtns = document.createElement('div')
+seeLiveAndSourceBtns.classList.add('see-live-and-source-btns')
+
+const seeLiveAndSourceBtnsAlink = document.createElement('a')
+listBtnAlink.classList.add('list-btn-a-link-a-link')
+
+const buttonForLive = document.createElement('button')
+buttonForLive.classList.add('button-for-live')
+
+const faFontLive = document.createElement('i')
+faFontLive.classList.add('fas', 'fa-solid', 'fa-chart-line')
+
+const buttonForGithub = document.createElement('button')
+buttonForLive.classList.add('button-for-github')
+
+const faFontGithub = document.createElement('i')
+faFontGithub.classList.add('fas', 'fa-brands', 'fa-github')
+
+
 
 
 
 function popUp() {
 let popupContent = {
-  'header': 'Keeping track of hundreds  of components website',
+  'headerMobile': 'Multi Post Stories',
+  'headerDesktop': 'Keeping track of hundreds  of components website',
   'closeIcon': './images/times.svg',
   'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
 
@@ -89,6 +113,7 @@ let popupContent = {
 }
 
 function headerAndCloseIcon() {
+let firstAppend = popUpSection.appendChild(div1Popup)
 
 
 }
