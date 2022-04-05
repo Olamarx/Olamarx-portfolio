@@ -33,10 +33,9 @@ navItems.forEach((navItem) => {
 const popUpSection = document.querySelector('.pop-up-section')
 const seeProjectBtn = document.querySelector('.see-pro')
 const allBtnClick = document.querySelectorAll('.a-general-class-to-pop')
-// const allbody = document.que
 
 
-// create html tags
+
 
 const popupContent = {
   'headerMobile': 'Multi Post Stories',
@@ -116,29 +115,8 @@ const faFontGithub = document.createElement('i')
 faFontGithub.classList.add('fas', 'fa-brands', 'fa-github')
 
 
-
-
-
-// function popUp() {
-
-
-// function headerAndCloseIcon() {
-// let firstAppend = popUpSection.appendChild(div1Popup)
-// }
-// }
-
-allBtnClick.forEach((allBtnClick) => {
-  navItem.addEventListener('click', () => {
-
 seeProjectBtn.addEventListener('click', function() {
-
-
-  
-
   const div1Popup = document.createElement('div');
-
-  // ${popupContent['headerMobile']}
-
 
   div1Popup.innerHTML =`<div>
   <div class="pop-up-header-times">
@@ -200,7 +178,7 @@ popUpSection.appendChild(div1Popup);
 
 
 
-});
+// });
 
 
 
