@@ -30,6 +30,52 @@ navItems.forEach((navItem) => {
 
 
 // Pop up onjects
+const popUpSection = document.querySelector('.pop-up-section')
+
+
+
+// create html tags
+
+
+
+const div1Popup = document.createElement('div');//main popup to append in section of html with clas pop-up-section
+div1Popup.classList.add('pop-up-header-times-button','',''); // 
+
+const div2Popup = document.createElement('div')
+div2Popup.classList.add('pop-up-header-times')
+
+const popHeaderH3 = document.createElement('h3')
+popHeaderH3.classList.add('pop-header-h3')
+
+const popCloseIcon = document.createElement('img')
+popCloseIcon.classList.add('pop-close-icon')
+
+const popButtonForThree = document.createElement('ul')
+popButtonForThree.classList.add('html-bootstrap-ruby-on-rails')
+
+const listBtn = document.createElement('li')
+popButtonForThree.classList.add('list-btn')
+
+const thelistedBtns = document.createElement('button')
+thelistedBtns.classList.add('the-listed-btns')
+
+const popupImageAndContentContainer = document.createElement('div') //div container of image and content which i nwill flex
+popupImageAndContentContainer.classList.add('popup-image-and-content-container')
+
+const popupImageContainer = document.createElement('div')
+popupImageContainer.classList.add('popup-image-container')
+
+const popupImage = document.createElement('img')
+popupImage.classList.add('popup-image')
+
+const popupContentDescriptionAndButtons = document.createElement('div')
+popupContentDescriptionAndButtons.classList.add('popup-content-description-and-buttons')
+
+const popupContentDescription = document.createElement('h5')
+popupContentDescription.classList.add('popup-content-description')
+
+
+
 
 function popUp() {
 let popupContent = {
@@ -42,7 +88,10 @@ let popupContent = {
   'sourceLink': '#'
 }
 
+function headerAndCloseIcon() {
 
+
+}
 
 
 
