@@ -32,6 +32,8 @@ navItems.forEach((navItem) => {
 // Pop up onjects
 const popUpSection = document.querySelector('.pop-up-section')
 const seeProjectBtn = document.querySelector('.see-pro')
+const allBtnClick = document.querySelectorAll('.a-general-class-to-pop')
+// const allbody = document.que
 
 
 // create html tags
@@ -43,8 +45,10 @@ const popupContent = {
   'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     'timeFont': "./images/times.svg",
   'featuredImage': './images/popupImg.svg',
-  'liveVersion': '#',
-  'sourceLink': '#',
+  'liveVersion': 'https://olamarx.github.io/Olamarx-portfolio/',
+  'sourceLink': 'https://github.com/Olamarx/Olamarx-portfolio',
+  'githubfont': '<img src="./images/githubfont.svg" alt="">',
+  'fontLive': '<img src="./images/livepreview.svg" alt="Live-preview">',
   'buttons': {
     'html': 'HTML',
     'bootstrap': 'Bootstrap',
@@ -123,9 +127,15 @@ faFontGithub.classList.add('fas', 'fa-brands', 'fa-github')
 // }
 // }
 
-seeProjectBtn.addEventListener('click', function() {
-  const div1Popup = document.createElement('div');
+allBtnClick.forEach((allBtnClick) => {
+  navItem.addEventListener('click', () => {
 
+seeProjectBtn.addEventListener('click', function() {
+
+
+  
+
+  const div1Popup = document.createElement('div');
 
   // ${popupContent['headerMobile']}
 
@@ -151,17 +161,19 @@ seeProjectBtn.addEventListener('click', function() {
 <div class="popup-content-description-and-buttons">
 
 <h5 class="popup-content-description">
-
+  ${popupContent.description}
 </h5>
 
-<div class="see-live-and-source-btns">
-<a href="">  <button>   </button>  </a>
-<a href="">  <button>   </button>  </a>
-</div>
+<ul class="see-live-and-source-btns">
+
+<li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
+
+<li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
+
+</ul>
 
 
-<i class="fas fa-brands fa-github"></i>
-<i class="fas fa-solid fa-chart-line"></i>
+
 </div>
 </div>
 
@@ -177,6 +189,19 @@ seeProjectBtn.addEventListener('click', function() {
 
   div1Popup.classList.add('pop-up-header-times-button');
 
+
+
+
 popUpSection.appendChild(div1Popup);
+});
+
+
+
+
+
 
 });
+
+
+
+

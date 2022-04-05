@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 html {
   scroll-behavior: smooth;
   width: 100%;
@@ -695,7 +699,7 @@ footer img {
 
 
 .pop-up-header-times-button {
-  background-color: red;
+  /* background-color: red; */
   height: 989px;
 width: 375px;
 
@@ -715,11 +719,14 @@ font-family: 'Roboto', sans-serif;
 color: #172B4D;
 font-size: 32px;
 font-weight: 700;
+
+margin: 0 10px;
+
 }
 
 .popup-close-barr {
-  height: 50px;
-width: 50px;
+  height: 30px;
+width: 30px;
 border-radius: 0px;
 }
 
@@ -729,7 +736,10 @@ border-radius: 0px;
 
 .html-bootstrap-ruby-on-rails {
   display: flex;
+  justify-content: flex-start;
   gap: 20px;
+
+  margin: 0 10px;
 }
 
 .the-listed-btns {
@@ -738,25 +748,61 @@ padding: 16px;
 }
 
 .popup-image-and-content-container {
-  background-color: green;
-
-  height: 470px;
-  width: 360px;
   margin: 40px 0;
 }
 
 .popup-image-container img {
   width: 311px;
   height: 220px;
-
+margin: 0 10px;
   /* background-color: purple; */
 }
 
+.popup-content-description-and-buttons {
+  display: flex;
+  flex-direction: column;
+
+  width: 311px;
+  height: 220px;
+
+margin: 0 10px;
+
+}
+
+.popup-content-description {
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+text-align: left;
+color: #344563;
+}
 
 
+.see-live-and-source-btns {
+  display: flex;
+  justify-content: space-between;
+}
 
+.link-list-btn {
+  height: 48px;
+width: 140px;
+/* cursor: pointer; */
+/* left: 153px; */
+/* top: 4px; */
+border-radius: 0px;
+padding: 12px;
 
+background: #FF6B00;
+border: 1px solid #FF6B00;
 
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
 
 
 
