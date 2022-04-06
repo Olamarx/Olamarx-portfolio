@@ -693,7 +693,7 @@ footer img {
 /* Pop up */
 
 .blur {
-  filter: blur(50px);
+  filter: blur(100px);
 }
 
 /* #overlay{

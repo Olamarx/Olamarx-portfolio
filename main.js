@@ -221,9 +221,9 @@ div1Popup.innerHTML =`<div>
   </div>
  
   <ul class="html-bootstrap-ruby-on-rails">
-  <li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
-  <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
-  <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
+  <li class="list-btn"><a href="#"><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
+  <li class="list-btn">    <a href="#"><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
+  <li class="list-btn">     <a href="#"><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
   </ul>
   <div class="popup-container">
   <div class="popup-image-and-content-container">
