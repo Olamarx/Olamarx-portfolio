@@ -684,38 +684,12 @@ footer img {
   height: -2px;
   width: 327px;
 }
-
-
-
-
-
-
 /* Pop up */
 
 .blur {
   filter: blur(100px);
 }
-
-/* #overlay{
-position: fixed;
-top: 0;
-bottom: 0;
-opacity: 0;
-right: 0;
-left: 0;
-background: blur(20px);
-background-color: rgba(0, 0, 0, .5);
-pointer-events: none;
-} */
-
-/* #overlay.active {
-  opacity: 1;
-  pointer-events: all;
-} */
-
 .pop-up-section{
-  /* filter: blur(100px); */
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -725,9 +699,7 @@ pointer-events: none;
   justify-content: center;
   z-index: 20;
   backdrop-filter: blur(2px);
-  /* background-color: rgba(0, 0, 0, 0.24); */
-  /* max-width: 90%; */
-}
+  }
 
 .pop-up-section.active {
   display: flex;
@@ -735,18 +707,9 @@ pointer-events: none;
 
 
 .pop-up-header-times-button {
-  /* background-color: red; */
   height: 0px;
 width: 375px;
-
-
 }
-
-/* .popup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .pop-up-header-times{
 display: flex;
@@ -856,97 +819,6 @@ align-items: center;
 .desktopviewp {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1324,30 +1196,11 @@ align-items: center;
   display: none;
 
   backdrop-filter: blur(2px);
-  /* width: 85vw; */
-  /* height: 92vh; */
-  /* padding: 1.8rem 1.2rem 1rem 1.2rem; */
-  background-color: #f3f1f1;
+ background-color: #f3f1f1;
 
   z-index: 20;
-  /* max-width: 90%; */
-
 }
 
-
-/* .pop-up-section{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f3f1f1;
-  display: none;
-  justify-content: center;
-  z-index: 20;
-  backdrop-filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.24);
-  /* max-width: 90%; */
-} */
 
 .pop-up-section.active {
   display: flex;
@@ -1359,12 +1212,6 @@ align-items: center;
   height: 631px;
   width: 1156px;
 }
-
-/* .popup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .pop-up-header-times{
 display: flex;
@@ -1416,8 +1263,6 @@ margin-right: 150px;
 .popup-image-container img {
   height: 400px;
 width: 659px;
-/* left: 24px; */
-/* top: 156px; */
 border-radius: 0px;
 
 }
@@ -1482,23 +1327,6 @@ align-items: center;
 .desktopviewp {
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width: 768px) {
