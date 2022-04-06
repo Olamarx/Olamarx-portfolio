@@ -120,7 +120,7 @@ seeProjectBtn.addEventListener('click', function() {
   <div class="pop-up-header-times">
   <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
   <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
-  <img class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
+  <img data-close-button class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
 </div>
 
 <ul class="html-bootstrap-ruby-on-rails">
@@ -147,23 +147,14 @@ seeProjectBtn.addEventListener('click', function() {
 <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
 
 <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
-
 </ul>
-
-
-
 </div>
 </div>
+</div>
+</div>
+</div>
+`
 
-</div>
-</div>
-  
-  
-  
-  
-  
-  
-  </div>`
 
   div1Popup.classList.add('pop-up-header-times-button');
 

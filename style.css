@@ -692,10 +692,34 @@ footer img {
 
 /* Pop up */
 
+#overlay{
+position: fixed;
+top: 0;
+bottom: 0;
+opacity: 0;
+right: 0;
+/* left: 0; */
+background: blur(20px);
+/* pointer-events: none; */
+}
+
+#overlay.active {
+  /* opacity: 1; */
+  /* pointer-events: all; */
+}
+
 .pop-up-section{
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
   display: flex;
   justify-content: center;
+
+  z-index: 200;
+  /* max-width: 90%; */
+  
 }
 
 
@@ -1263,8 +1287,13 @@ align-items: center;
 /* Pop up */
 
 .pop-up-section{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
+
 }
 
 
@@ -1383,8 +1412,8 @@ background: #FF6B00;
 border: 1px solid #FF6B00;
 
 display: flex;
-justify-content: start;
-align-items: flex-end;
+justify-content: space-between;
+align-items: center;
 
 }
 
