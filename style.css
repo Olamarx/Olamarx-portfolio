@@ -699,20 +699,21 @@ bottom: 0;
 opacity: 0;
 right: 0;
 /* left: 0; */
-background: blur(20px);
-/* pointer-events: none; */
+/* background: blur(20px); */
+background-color: rgba(0, 0, 0, .5);
+pointer-events: none;
 }
 
 #overlay.active {
-  /* opacity: 1; */
-  /* pointer-events: all; */
+  opacity: 1;
+  pointer-events: all;
 }
 
 .pop-up-section{
   position: fixed;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -720,6 +721,10 @@ background: blur(20px);
   z-index: 200;
   /* max-width: 90%; */
   
+}
+
+.pop-up-section{
+  transform: translate(-50%, -50%) scale(1);
 }
 
 
