@@ -25,6 +25,8 @@ navItems.forEach((navItem) => {
 
 
 
+const openBtn = document.querySelectorAll('[data-modal-target]')
+const closeBtn = document.querySelectorAll('[data-close-button]')
 
 
 
