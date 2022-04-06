@@ -26,7 +26,7 @@ navItems.forEach((navItem) => {
 
 
 const openBtn = document.querySelectorAll('[data-modal-target]')
-const closeBtn = document.querySelectorAll('.popup-close-barr')
+const closeBtn = document.querySelector('.popup-close-barr')
 
 
 
@@ -38,19 +38,21 @@ openBtn.forEach(button => {
     document.body.classList.toggle('no-scroll');
    
     const modal = document.querySelector(button.dataset.dataTarget)
+
     openModal(modal)
   })
 })
 
-closeBtn.forEach(img => {
-  img.addEventListener('click', () => {
-  popUpSection.removeChild(div1Popup);
-  console.log(div1Popup)
-    const modal = img.remove(div1Popup)
-    closeModal(modal)
-    // document.body.style.background = '#fff';
-  })
-})
+// closeBtn.forEach(img => {
+//   img.addEventListener('click', () => {
+//   popUpSection.removeChild(div1Popup);
+//   console.log(div1Popup)
+//   const modalCloseUp = document.querySelector(button.dataset.dataTarget)
+//     const modal = img.remove(div1Popup)
+//     closeModal(modal)
+//     // document.body.style.background = '#fff';
+//   })
+// })
 
 function openModal(modal){
   if (modal == null) return
@@ -60,6 +62,8 @@ function openModal(modal){
 function closeModal(modal){
   if (modal == null) return
   modal.popUpSection.removeChild(div1Popup);
+  console.log(modal)
+
 }
 
 const popUpSection = document.querySelector('.pop-up-section')
@@ -88,7 +92,8 @@ const popupContent = {
   'headerMobile': 'Multi Post Stories',
   'headerDesktop': 'Keeping track of hundreds  of components website',
   'closeIcon': './images/times.svg',
-  'description': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  'descriptionDesktop': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  'descriptionMobile': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     'timeFont': "./images/times.svg",
   'featuredImage': './images/popupImg.svg',
   'liveVersion': 'https://olamarx.github.io/Olamarx-portfolio/',
@@ -226,8 +231,12 @@ div1Popup.innerHTML =`<div>
   <img src="${popupContent.featuredImage}" alt="Image">
   </div>
   <div class="popup-content-description-and-buttons">
-  <h5 class="popup-content-description">
-    ${popupContent.description}
+  <h5 class="popup-content-description desktopviewp">
+    ${popupContent.descriptionDesktop}
+  </h5>
+
+  <h5 class="popup-content-description mobileviewp">
+    ${popupContent.descriptionMobile}
   </h5>
   <ul class="see-live-and-source-btns">
   <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
