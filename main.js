@@ -77,16 +77,16 @@ div1Popup.innerHTML =`<div>
 
 const openBtn = document.querySelectorAll('[data-modal-target]');
 const popUpSection = document.querySelector('.pop-up-section');
+let closeBtn;
 
 openBtn.forEach(button => {
-  popUpSection.innerHTML = '';
-  popUpSection.appendChild(div1Popup);
   button.addEventListener('click', () => {
-    popUpSection.classList.toggle('active');
-
-    const closeBtn = document.querySelector('.popup-close-barr');
+    popUpSection.innerHTML = '';
+    popUpSection.appendChild(div1Popup);
+    popUpSection.classList.add('active');
+    closeBtn = document.querySelector('.pop-up-section .popup-close-barr');
     closeBtn.addEventListener('click', () => {
-      popUpSection.classList.toggle('active');
+      popUpSection.classList.remove('active');
     });
   });
 });
