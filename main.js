@@ -28,14 +28,14 @@ navItems.forEach((navItem) => {
 const openBtn = document.querySelectorAll('[data-modal-target]')
 const closeBtn = document.querySelectorAll('[data-close-button]')
 
-const overlay = document.getElementById('overlay')
+// const overlay = document.getElementById('overlay')
 
 
 
 // Pop up onjects
-const popUpSection = document.querySelector('.pop-up-section')
-const seeProjectBtn = document.querySelector('.see-pro')
-const allBtnClick = document.querySelectorAll('.a-general-class-to-pop')
+// const popUpSection = document.querySelector('.pop-up-section')
+// const seeProjectBtn = document.querySelector('.see-pro')
+// const allBtnClick = document.querySelectorAll('.a-general-class-to-pop')
 
 
 
@@ -162,11 +162,8 @@ const faFontGithub = document.createElement('i')
 faFontGithub.classList.add('fas', 'fa-brands', 'fa-github')
 
 
-
-openBtn.forEach(button => {
-  button.addEventListener('click', () => {
-    const div1Popup = document.createElement('div');
-    div1Popup.innerHTML =`<div>
+const div1Popup = document.createElement('div');
+div1Popup.innerHTML =`<div>
     <div class="pop-up-header-times">
     <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
     <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
@@ -178,209 +175,95 @@ openBtn.forEach(button => {
   <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
   <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
   </ul>
- 
- 
   <div class="popup-container">
   <div class="popup-image-and-content-container">
   <div class="popup-image-container">
   <img src="${popupContent.featuredImage}" alt="Image">
   </div>
- 
   <div class="popup-content-description-and-buttons">
- 
   <h5 class="popup-content-description">
     ${popupContent.description}
   </h5>
- 
   <ul class="see-live-and-source-btns">
- 
   <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
- 
   <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  `
-  div1Popup.classList.add('pop-up-header-times-button');
-  popUpSection.appendChild(div1Popup);
-    const modal = document.querySelector(button.dataset.)
-    openModal(modal)
-  })
-})
-
-
+  </ul> </div>  </div>  </div>  </div>  </div>`
 
 
 openBtn.forEach(button => {
   button.addEventListener('click', () => {
-    const div1Popup = document.createElement('div');
-    div1Popup.innerHTML =`<div>
-    <div class="pop-up-header-times">
-    <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
-    <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
-    <img data-close-button class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
-  </div>
- 
-  <ul class="html-bootstrap-ruby-on-rails">
-  <li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
-  <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
-  <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
-  </ul>
- 
- 
-  <div class="popup-container">
-  <div class="popup-image-and-content-container">
-  <div class="popup-image-container">
-  <img src="${popupContent.featuredImage}" alt="Image">
-  </div>
- 
-  <div class="popup-content-description-and-buttons">
- 
-  <h5 class="popup-content-description">
-    ${popupContent.description}
-  </h5>
- 
-  <ul class="see-live-and-source-btns">
- 
-  <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
- 
-  <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  `
-  div1Popup.classList.add('pop-up-header-times-button');
-  popUpSection.appendChild(div1Popup);
-    const modal = document.querySelector(button.dataset.modalTarget)
+    const modal = document.querySelector(button.dataset.dataTarget)
     openModal(modal)
   })
 })
 
 closeBtn.forEach(button => {
   button.addEventListener('click', () => {
-    const div1Popup = document.createElement('div');
-    div1Popup.innerHTML =`<div>
-    <div class="pop-up-header-times">
-    <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
-    <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
-    <img data-close-button class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
-  </div>
- 
-  <ul class="html-bootstrap-ruby-on-rails">
-  <li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
-  <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
-  <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
-  </ul>
- 
- 
-  <div class="popup-container">
-  <div class="popup-image-and-content-container">
-  <div class="popup-image-container">
-  <img src="${popupContent.featuredImage}" alt="Image">
-  </div>
- 
-  <div class="popup-content-description-and-buttons">
- 
-  <h5 class="popup-content-description">
-    ${popupContent.description}
-  </h5>
- 
-  <ul class="see-live-and-source-btns">
- 
-  <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
- 
-  <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
-  </ul>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  `
-  div1Popup.classList.add('pop-up-header-times-button');
-  popUpSection.appendChild(div1Popup);
+  popUpSection.remove(div1Popup);
     const modal = button.closest('.pop-up-section')
     closeModal(modal)
   })
 })
 
-
-
 function openModal(modal){
   if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  modal.popUpSection.appendChild(div1Popup);
 }
 
 function closeModal(modal){
   if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+  modal.popUpSection.remove(div1Popup);
 }
 
-// seeProjectBtn.addEventListener('click', function() {
-//   const div1Popup = document.createElement('div');
-
-//   div1Popup.innerHTML =`<div>
-//   <div class="pop-up-header-times">
-//   <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
-//   <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
-//   <img data-close-button class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
-// </div>
-
-// <ul class="html-bootstrap-ruby-on-rails">
-// <li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
-// <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
-// <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
-// </ul>
 
 
-// <div class="popup-container">
-// <div class="popup-image-and-content-container">
-// <div class="popup-image-container">
-// <img src="${popupContent.featuredImage}" alt="Image">
-// </div>
-
-// <div class="popup-content-description-and-buttons">
-
-// <h5 class="popup-content-description">
-//   ${popupContent.description}
-// </h5>
-
-// <ul class="see-live-and-source-btns">
-
-// <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
-
-// <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
-// </ul>
-// </div>
-// </div>
-// </div>
-// </div>
-// </div>
-// `
 
 
+
+// openBtn.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const div1Popup = document.createElement('div');
+//     div1Popup.innerHTML =`<div>
+//     <div class="pop-up-header-times">
+//     <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
+//     <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
+//     <img data-close-button class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
+//   </div>
+ 
+//   <ul class="html-bootstrap-ruby-on-rails">
+//   <li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
+//   <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
+//   <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
+//   </ul>
+ 
+ 
+//   <div class="popup-container">
+//   <div class="popup-image-and-content-container">
+//   <div class="popup-image-container">
+//   <img src="${popupContent.featuredImage}" alt="Image">
+//   </div>
+ 
+//   <div class="popup-content-description-and-buttons">
+ 
+//   <h5 class="popup-content-description">
+//     ${popupContent.description}
+//   </h5>
+ 
+//   <ul class="see-live-and-source-btns">
+ 
+//   <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
+ 
+//   <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
+//   </ul>
+//   </div>
+//   </div>
+//   </div>
+//   </div>
+//   </div>
+//   `
 //   div1Popup.classList.add('pop-up-header-times-button');
-
-
-
-
-// popUpSection.appendChild(div1Popup);
-// });
-
-
-
-
-
-
-// });
-
-
-
+//   popUpSection.appendChild(div1Popup);
+//     const modal = document.querySelector(button.dataset.modalTarget)
+//     openModal(modal)
+//   })
+// })
