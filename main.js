@@ -26,14 +26,58 @@ navItems.forEach((navItem) => {
 
 
 const openBtn = document.querySelectorAll('[data-modal-target]')
-const closeBtn = document.querySelectorAll('[data-close-button]')
+const closeBtn = document.querySelectorAll('.popup-close-barr')
+
+
+
+
+openBtn.forEach(button => {
+  button.addEventListener('click', () => {
+    popUpSection.appendChild(div1Popup);
+    blurProjects.forEach((div1Popup) => div1Popup.classList.toggle('blur'));
+    document.body.classList.toggle('no-scroll');
+   
+    const modal = document.querySelector(button.dataset.dataTarget)
+    openModal(modal)
+  })
+})
+
+closeBtn.forEach(img => {
+  img.addEventListener('click', () => {
+  popUpSection.removeChild(div1Popup);
+  console.log(div1Popup)
+    const modal = img.remove(div1Popup)
+    closeModal(modal)
+    // document.body.style.background = '#fff';
+  })
+})
+
+function openModal(modal){
+  if (modal == null) return
+  modal.popUpSection.appendChild(div1Popup);
+}
+
+function closeModal(modal){
+  if (modal == null) return
+  modal.popUpSection.removeChild(div1Popup);
+}
+
+const popUpSection = document.querySelector('.pop-up-section')
+
+
+const blurProjects = document.querySelectorAll('#portfolio > div');
+
+
+
+
+
+
 
 // const overlay = document.getElementById('overlay')
 
 
 
 // Pop up onjects
-const popUpSection = document.querySelector('.pop-up-section')
 // const seeProjectBtn = document.querySelector('.see-pro')
 // const allBtnClick = document.querySelectorAll('.a-general-class-to-pop')
 
@@ -51,6 +95,7 @@ const popupContent = {
   'sourceLink': 'https://github.com/Olamarx/Olamarx-portfolio',
   'githubfont': '<img src="./images/githubfont.svg" alt="">',
   'fontLive': '<img src="./images/livepreview.svg" alt="Live-preview">',
+  
   'buttons': {
     'html': 'HTML',
     'bootstrap': 'Bootstrap',
@@ -190,33 +235,7 @@ div1Popup.innerHTML =`<div>
   </ul> </div>  </div>  </div>  </div>  </div>`
 
 // console.log(div1Popup)
-openBtn.forEach(button => {
-  button.addEventListener('click', () => {
-    popUpSection.appendChild(div1Popup);
 
-
-    const modal = document.querySelector(button.dataset.dataTarget)
-    openModal(modal)
-  })
-})
-
-closeBtn.forEach(button => {
-  button.addEventListener('click', () => {
-  popUpSection.removeChild(div1Popup);
-    const modal = button.closest('.pop-up-section')
-    closeModal(modal)
-  })
-})
-
-function openModal(modal){
-  if (modal == null) return
-  modal.popUpSection.appendChild(div1Popup);
-}
-
-function closeModal(modal){
-  if (modal == null) return
-  modal.popUpSection.remove(div1Popup);
-}
 
 
 
