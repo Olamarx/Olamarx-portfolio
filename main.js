@@ -25,11 +25,7 @@ navItems.forEach((navItem) => {
 
 
 
-const openBtn = document.querySelectorAll('[data-modal-target]')
-const closeBtn = document.querySelector('.popup-close-barr')
-
-
-
+const openBtn = document.querySelectorAll('[data-modal-target]');
 
 openBtn.forEach(button => {
   button.addEventListener('click', () => {
@@ -37,24 +33,20 @@ openBtn.forEach(button => {
     blurProjects.forEach((div1Popup) => div1Popup.classList.toggle('blur'));
     document.body.classList.toggle('no-scroll');
    
-    const modal = document.querySelector(button.dataset.dataTarget)
+    const modal = document.querySelector(button.dataset.dataTarget);
 
-    openModal(modal)
-  })
-})
+    openModal(modal);
 
-// closeBtn.forEach(img => {
-//   img.addEventListener('click', () => {
-//   popUpSection.removeChild(div1Popup);
-//   console.log(div1Popup)
-//   const modalCloseUp = document.querySelector(button.dataset.dataTarget)
-//     const modal = img.remove(div1Popup)
-//     closeModal(modal)
-//     // document.body.style.background = '#fff';
-//   })
-// })
+    const closeBtn = document.querySelector('.popup-close-barr');
+    closeBtn.addEventListener('click', () => {
+      popUpSection.removeChild(div1Popup);
+      console.log(div1Popup);
+        closeModal(modal);
+    });
+  });
+});
 
-function openModal(modal){
+function openModal(modal) {
   if (modal == null) return
   modal.popUpSection.appendChild(div1Popup);
 }
@@ -108,52 +100,7 @@ const popupContent = {
   }
 }
 
-// div1Popup.innerHTML =`<div>
-//    <div class="pop-up-header-times">
-//    <h3 class="pop-header-h3"> ${popupContent['headerMobile']} </h3>
-//    <h3 class="pop-header-h3-desktop"> ${popupContent['headerDesktop']} </h3>
-//    <img data-close-button class="popup-close-barr" src="${popupContent['timeFont']}" alt="close-bar">
-//  </div>
 
-//  <ul class="html-bootstrap-ruby-on-rails">
-//  <li class="list-btn"><a href=""><button class="the-listed-btns"> ${popupContent.buttons.html} </button> </a></li>
-//  <li class="list-btn">    <a href=""><button class="the-listed-btns"> ${popupContent.buttons.bootstrap} </button> </a> </li>
-//  <li class="list-btn">     <a href=""><button class="the-listed-btns"> ${popupContent.buttons.ruby} </button> </a>   </li>
-//  </ul>
-
-
-//  <div class="popup-container">
-//  <div class="popup-image-and-content-container">
-//  <div class="popup-image-container">
-//  <img src="${popupContent.featuredImage}" alt="Image">
-//  </div>
-
-//  <div class="popup-content-description-and-buttons">
-
-//  <h5 class="popup-content-description">
-//    ${popupContent.description}
-//  </h5>
-
-//  <ul class="see-live-and-source-btns">
-
-//  <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
-
-//  <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
-//  </ul>
-//  </div>
-//  </div>
-//  </div>
-//  </div>
-//  </div>
-//  `
-
-
-//   div1Popup.classList.add('pop-up-header-times-button');
-
-
-
-
-// popUpSection.appendChild(div1Popup);
 
 
 
@@ -242,6 +189,8 @@ div1Popup.innerHTML =`<div>
   <li><a href=" ${popupContent.liveVersion}"> <button class="link-list-btn"> See Live ${popupContent.fontLive} </button> </a></li>
   <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
   </ul> </div>  </div>  </div>  </div>  </div>`
+
+
 
 // console.log(div1Popup)
 
