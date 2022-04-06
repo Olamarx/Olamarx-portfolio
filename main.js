@@ -33,7 +33,7 @@ const closeBtn = document.querySelectorAll('[data-close-button]')
 
 
 // Pop up onjects
-// const popUpSection = document.querySelector('.pop-up-section')
+const popUpSection = document.querySelector('.pop-up-section')
 // const seeProjectBtn = document.querySelector('.see-pro')
 // const allBtnClick = document.querySelectorAll('.a-general-class-to-pop')
 
@@ -189,9 +189,12 @@ div1Popup.innerHTML =`<div>
   <li><a href=" ${popupContent.sourceLink}">  <button class="link-list-btn"> See Source ${popupContent.githubfont}  </button>  </a></li>
   </ul> </div>  </div>  </div>  </div>  </div>`
 
-
+// console.log(div1Popup)
 openBtn.forEach(button => {
   button.addEventListener('click', () => {
+    popUpSection.appendChild(div1Popup);
+
+
     const modal = document.querySelector(button.dataset.dataTarget)
     openModal(modal)
   })
@@ -199,7 +202,7 @@ openBtn.forEach(button => {
 
 closeBtn.forEach(button => {
   button.addEventListener('click', () => {
-  popUpSection.remove(div1Popup);
+  popUpSection.removeChild(div1Popup);
     const modal = button.closest('.pop-up-section')
     closeModal(modal)
   })
