@@ -310,6 +310,7 @@ form.addEventListener('submit', (event) => {
     error.style.margin = '24px auto';
     error.style.border = '1px solid gray';
   } else {
+    error.style.display = 'none';
     form.submit();
   }
 });
