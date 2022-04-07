@@ -242,10 +242,9 @@ headerWorks.insertAdjacentHTML('afterend', `
 
 // Pop Up Section
 
-for (let i = 0; i < projects.length; i++) {
-
-  const div1Popup = document.createElement('div');
-  div1Popup.innerHTML = `<div>
+// for (let i = 0; i < projects.length; i++) {
+const div1Popup = document.createElement('div');
+div1Popup.innerHTML = `<div>
       <div class="pop-up-header-times">
       <h3 class="pop-header-h3"> ${projects[0].name} </h3>
       <h3 class="pop-header-h3-desktop"> ${projects[0].desktopname}</h3>
@@ -278,19 +277,19 @@ for (let i = 0; i < projects.length; i++) {
     </div>
     </div>`;
 
-  const openBtn = document.querySelectorAll('[data-modal-target]');
-  const popUpSection = document.querySelector('.pop-up-section');
-  let closeBtn;
+const openBtn = document.querySelectorAll('[data-modal-target]');
+const popUpSection = document.querySelector('.pop-up-section');
+let closeBtn;
 
-  openBtn.forEach((button) => {
-    button.addEventListener('click', () => {
-      popUpSection.innerHTML = '';
-      popUpSection.appendChild(div1Popup);
-      popUpSection.classList.add('active');
-      closeBtn = document.querySelector('.pop-up-section .popup-close-barr');
-      closeBtn.addEventListener('click', () => {
-        popUpSection.classList.remove('active');
-      });
+openBtn.forEach((button) => {
+  button.addEventListener('click', () => {
+    popUpSection.innerHTML = '';
+    popUpSection.appendChild(div1Popup);
+    popUpSection.classList.add('active');
+    closeBtn = document.querySelector('.pop-up-section .popup-close-barr');
+    closeBtn.addEventListener('click', () => {
+      popUpSection.classList.remove('active');
     });
   });
-}
+});
+// }
