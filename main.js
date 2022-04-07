@@ -62,6 +62,94 @@ const projects = [{
 }
 ]
 
+const objOfProjects = {
+  name: "Multi Post Stories",
+  description: " A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  image: "./images/bg.png",
+  technologies: ["HTML", "Bootstrap", "Ruby on rails"],
+  link: "https://github.com/Olamarx/Olamarx-portfolio",
+} 
+
+// template Projects array
+
+const myProjects = [
+  {
+    id: "card2",
+    title: 'titulo',
+    tech: ['html', 'bootstrap', 'ruby on rails'],
+    image: '',
+    descriptionOpen: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    descriptionClose: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: "card3",
+    title: 'tories',
+    tech: ['html', 'bootstrap', 'ruby on rails'],
+    image: '',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    descriptionClose:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: "card4",
+    title: 'Post Stories',
+    tech: ['html', 'bootstrap', 'ruby on rails'],
+    image: '',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    descriptionClose:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: "card5",
+    title: 'Multi Post',
+    tech: ['html', 'bootstrap', 'ruby on rails'],
+    image: '',
+    descriptionClose:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: "card6",
+    title: 'Multi Post Stories',
+    tech: ['html', 'bootstrap', 'ruby on rails'],
+    image: '',
+    descriptionClose:"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    seeLive: '#',
+    seeSource: '#',
+  },
+]
+
+console.log(myProjects[4].tech[2])
+
+const headerWorks = document.querySelector(".w-container")
+
+headerWorks.insertAdjacentHTML('afterend', `
+  <div class="image-paragraph">
+    <img class="img-pd" src="${objOfProjects.image}" alt="place holder">
+    <div class="multiple-column">
+      <h2 class="multi-column-h1">${objOfProjects.name}</h2>
+      <p class="multi-column-det">
+        ${objOfProjects.description}
+      </p>
+      <ul class="what-i-know">
+        <li class="exp">css</li>
+        <li class="exp">html</li>
+        <li class="exp">bootstrap</li>
+        <li class="exp">Ruby</li>
+      </ul>
+      <button data-modal-target="#pop-up-section" class="see-pro" type="button">
+        See Project
+      </button>
+    </div>
+  </div>`);
+  
+
 
 
 for (let i = 0; i<projects.length; i++) {
