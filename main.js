@@ -242,13 +242,14 @@ headerWorks.insertAdjacentHTML('afterend', `
 
 // Pop Up Section
 
-for (let i = 0; i < projects.length; i) {
+for (let i = 0; i < projects.length; i++) {
+
   const div1Popup = document.createElement('div');
   div1Popup.innerHTML = `<div>
       <div class="pop-up-header-times">
       <h3 class="pop-header-h3"> ${projects[0].name} </h3>
       <h3 class="pop-header-h3-desktop"> ${projects[0].desktopname}</h3>
-      <img data-close-button class="popup-close-barr" src="${projects[i].image}" alt="close-bar">
+      <img data-close-button class="popup-close-barr" src="${projects[0].image}" alt="close-bar">
     </div>
    
     <ul class="html-bootstrap-ruby-on-rails">
