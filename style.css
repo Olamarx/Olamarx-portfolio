@@ -701,6 +701,8 @@ footer img {
   justify-content: center;
   z-index: 20;
   backdrop-filter: blur(2px);
+  height: 718px;
+  width: 343px;
 }
 
 .pop-up-section.active {
@@ -719,7 +721,7 @@ footer img {
   color: #172b4d;
   font-size: 28px;
   font-weight: 700;
-  margin: 0 10px;
+  margin: 30px 30px 0 0;
 }
 
 .popup-close-barr {
@@ -794,11 +796,15 @@ footer img {
   width: 140px;
   border-radius: 0;
   padding: 12px;
-  background: #ff6b00;
   border: 1px solid #ff6b00;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  background: #ff6b00;
 }
 
 .desktopviewp {
@@ -1274,6 +1280,7 @@ footer img {
     background: #ff6b00;
     border: 1px solid #ff6b00;
     display: flex;
+    color: #fff;
     justify-content: space-between;
     align-items: center;
   }
