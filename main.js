@@ -244,7 +244,7 @@ headerWorks.insertAdjacentHTML('afterend', `
 
 // for (let i = 0; i < projects.length; i++) {
 const div1Popup = document.createElement('div');
-div1Popup.innerHTML = `<div>
+div1Popup.innerHTML = `<div> <div>
       <div class="pop-up-header-times">
       <h3 class="pop-header-h3"> ${projects[0].name} </h3>
       <h3 class="pop-header-h3-desktop"> ${projects[0].desktopname}</h3>
