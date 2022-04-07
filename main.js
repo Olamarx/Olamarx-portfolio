@@ -307,8 +307,8 @@ form.addEventListener('submit', (event) => {
     error.textContent = 'Kindly input lower case characters in all fields';
     error.style.color = 'red';
     error.style.fontFamily = 'Roboto, sans-serif';
-    error.style.margin = "24px auto";
-    error.style.border = "1px solid gray";
+    error.style.margin = '24px auto';
+    error.style.border = '1px solid gray';
   } else {
     form.submit();
   }
