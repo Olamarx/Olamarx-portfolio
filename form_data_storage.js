@@ -1,12 +1,10 @@
 const formPickDetail = document.querySelector('#Form-contact');
-// console.log(formPickDetail)
 
 let formData = {
   name: '',
   email: '',
   text: '',
 };
-// console.log(formData)
 
 function formInputData(inputType) {
   formPickDetail.elements[inputType].addEventListener('input', () => {
