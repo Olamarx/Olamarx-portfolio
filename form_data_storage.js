@@ -1,4 +1,4 @@
-const formPickDetail = document.querySelector('#Form-contact');
+const formDetail = document.querySelector('#Form-contact');
 
 let formData = {
   name: '',
@@ -7,14 +7,14 @@ let formData = {
 };
 
 function formInputData(inputType) {
-  formPickDetail.elements[inputType].addEventListener('input', () => {
-    formData[inputType] = formPickDetail.elements[inputType].value;
+  formDetail.elements[inputType].addEventListener('input', () => {
+    formData[inputType] = formDetail.elements[inputType].value;
     localStorage.setItem('form-data', JSON.stringify(formData));
   });
 }
 
 function setFormDataInLocaleStorage(inputType) {
-  formPickDetail.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
+  formDetail.elements[inputType].value = JSON.parse(localStorage['form-data'])[inputType];
 }
 
 window.addEventListener('load', () => {
