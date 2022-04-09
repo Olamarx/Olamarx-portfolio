@@ -18,7 +18,7 @@ function setFormDataInLocaleStorage(inputType) {
 }
 
 window.addEventListener('load', () => {
-  if (localStorage.getItem('form-data') === null) {
+   (localStorage.getItem('form-data') === null) {
     localStorage.setItem('form-data', JSON.stringify(formData));
   } else {
     formData = JSON.parse(localStorage.getItem('form-data'));
