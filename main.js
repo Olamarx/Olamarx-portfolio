@@ -1,26 +1,28 @@
-const menu = document.querySelector('.menu');
+const menuBar = document.querySelector('.new-menu');
+const mainContainer = document.querySelector('.main-container');
+const mainNavbarLogo = document.querySelector('.main-navbar-logo');
+const listingOfUl = document.querySelector('.listing-of-ul');
 const closeMenu = document.querySelector('.close-menu');
-const sidebar = document.querySelector('.sidebar');
-const addToListing = document.querySelector('.ul-listing');
-const navItems = document.querySelectorAll('.navitem-sidebar');
-const removeEnve = document.querySelector('.logo-portfolio-right-content-2');
+const headerAside = document.querySelector('.header-aside');
+const envelop = document.querySelector('.envelo');
 
-menu.addEventListener('click', () => {
-  sidebar.classList.toggle('show-sidebar');
-  addToListing.classList.add('add-to-listing');
-  removeEnve.style.display = 'none';
+menuBar.addEventListener('click', () => {
+  menuBar.classList.toggle('active');
+  mainContainer.classList.toggle('active');
+  mainNavbarLogo.classList.toggle('active');
+  listingOfUl.classList.toggle('active');
+  closeMenu.classList.toggle('active');
+  headerAside.classList.toggle('active');
+  envelop.style.display = 'none';
 });
 
 closeMenu.addEventListener('click', () => {
-  sidebar.classList.toggle('show-sidebar');
-  addToListing.classList.toggle('ul-listing');
-  addToListing.classList.toggle('add-to-listing');
-});
-
-navItems.forEach((navItem) => {
-  navItem.addEventListener('click', () => {
-    sidebar.classList.toggle('show-sidebar');
-  });
+  menuBar.classList.toggle('active');
+  mainContainer.classList.toggle('active');
+  mainNavbarLogo.classList.toggle('active');
+  listingOfUl.classList.toggle('active');
+  closeMenu.classList.toggle('active');
+  headerAside.classList.toggle('active');
 });
 
 const projects = [{
@@ -133,6 +135,7 @@ headerWorks.insertAdjacentHTML('afterend', `
       <p class="multi-column-det">
         ${objOfProjects.description}
       </p>
+      
       <ul class="what-i-know">
         <li class="exp">${projects[0].technologies[0]}</li>
         <li class="exp">${projects[0].technologies[1]}</li>
@@ -170,8 +173,6 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${myProjects[0].tech[2]}</li>
           </ul>
              <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
-
-
         <div class="pro-art-major pro-art-major-3">
           <div class="art">
            <h2 class="art-data art-data-2">${myProjects[2].title}</h2> 
@@ -294,6 +295,47 @@ openBtn.forEach((button) => {
 });
 // }
 
+const array = [
+  {
+    title: 'Awesome Books',
+    image: './images/AwesomeBookBookSectionSPA.jpg',
+    description: 'This is a Single Page App(SMA) helps to save the books that are awesome to you. You can equally delete it at your time.',
+    seeLive: 'https://olamarx.github.io/Microverse-Awesome-Books/dist/',
+    seeSource: 'https://github.com/Olamarx/Microverse-Awesome-Books',
+  },
+  {
+    title: 'To-do List App',
+    image: './images/TodoList.jpg',
+    description: "This app helps in organizing one's day. It adds activities of the day and allow us to delete in group and individually.",
+    seeLive: 'https://olamarx.github.io/Todo-List/dist/',
+    seeSource: 'https://github.com/Olamarx/Todo-List',
+  },
+  {
+    title: 'Mockup tech learning site',
+    image: './images/TodoList.jpg',
+    description: "This app helps in organizing one's day. It adds activities of the day and allow us to delete in group and individually.",
+    seeLive: 'https://olamarx.github.io/Capstone-project/',
+    seeSource: 'https://github.com/Olamarx/Capstone-project',
+  },
+];
+const showUp = document.querySelector('.section-under-my-recent-works');
+
+array.forEach((one) => {
+  const placeIt = `
+<div class="pro-art-major pro-art-major-first-up">
+          <div class="art">
+          <h2 class="art-data art-data-2">${one.title}</h2>
+          <h2 class="art-data-desktop-view">${one.title}</h2> 
+            <p class="daily-s-con">${one.description}</p>
+          </div>
+          <ul class="pro-t">
+            <li class="pro-"><a href="${one.seeLive}">Live Preview</a> </li>
+            <li class="pro-"> <a href="${one.seeSource}">Source Code</a> </li>
+            </ul>
+<button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button"></button></div>
+`;
+  showUp.insertAdjacentHTML('afterbegin', placeIt);
+});
 // Form Validation
 
 const form = document.querySelector('.contact');
