@@ -1135,6 +1135,12 @@ footer img {
     background-image: url(./images/darker-bg.png);
   }
 
+  .pro-art-major-3,
+  .pro-art-major-6 {
+    background-size: 369px 435px;
+    background-image: url(./images/pro-art-major-3.png);
+  }
+
   .pro-art-major-first-up {
     background-size: 369px 435px;
   }
@@ -1153,12 +1159,6 @@ footer img {
 
   .pro-art-major:nth-child(1) {
     background-image: url(./images/lum.jpg);
-  }
-
-  .pro-art-major-3,
-  .pro-art-major-6 {
-    background-size: 369px 435px;
-    background-image: url(./images/pro-art-major-3.png);
   }
 
   .see-project-desktop-version {
