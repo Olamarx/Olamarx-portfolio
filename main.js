@@ -1,27 +1,83 @@
-const menu = document.querySelector('.menu');
-const closeMenu = document.querySelector('.close-menu');
-const sidebar = document.querySelector('.sidebar');
-const addToListing = document.querySelector('.ul-listing');
-const navItems = document.querySelectorAll('.navitem-sidebar');
-const removeEnve = document.querySelector('.logo-portfolio-right-content-2');
+const menuBar = document.querySelector('.new-menu')
+const mainContainer = document.querySelector('.main-container')
+const mainNavbarLogo = document.querySelector('.main-navbar-logo')
+const listingOfUl = document.querySelector('.listing-of-ul')
+const closeMenu = document.querySelector('.close-menu')
+const headerAside = document.querySelector('.header-aside')
+const envelop = document.querySelector('.envelo')
 
-menu.addEventListener('click', () => {
-  sidebar.classList.toggle('show-sidebar');
-  addToListing.classList.add('add-to-listing');
-  removeEnve.style.display = 'none';
-});
+
+menuBar.addEventListener('click', () => {
+  menuBar.classList.toggle('active')
+  mainContainer.classList.toggle('active')
+  mainNavbarLogo.classList.toggle('active')
+  listingOfUl.classList.toggle('active')
+  closeMenu.classList.toggle('active')
+  headerAside.classList.toggle('active')
+  envelop.style.display = 'none'
+})
 
 closeMenu.addEventListener('click', () => {
-  sidebar.classList.toggle('show-sidebar');
-  addToListing.classList.toggle('ul-listing');
-  addToListing.classList.toggle('add-to-listing');
-});
+  menuBar.classList.toggle('active')
+  mainContainer.classList.toggle('active')
+  mainNavbarLogo.classList.toggle('active')
+  listingOfUl.classList.toggle('active')
+  closeMenu.classList.toggle('active')
+  headerAside.classList.toggle('active')
+})
 
-navItems.forEach((navItem) => {
-  navItem.addEventListener('click', () => {
-    sidebar.classList.toggle('show-sidebar');
-  });
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const menu = document.querySelector('.menu');
+// const closeMenu = document.querySelector('.close-menu');
+// const sidebar = document.querySelector('.sidebar');
+// const addToListing = document.querySelector('.ul-listing');
+// const navItems = document.querySelectorAll('.navitem-sidebar');
+// const removeEnve = document.querySelector('.logo-portfolio-right-content-2');
+
+// menu.addEventListener('click', () => {
+//   sidebar.classList.toggle('show-sidebar');
+//   addToListing.classList.add('add-to-listing');
+//   removeEnve.style.display = 'none';
+// });
+
+// closeMenu.addEventListener('click', () => {
+//   sidebar.classList.toggle('show-sidebar');
+//   addToListing.classList.toggle('ul-listing');
+//   addToListing.classList.toggle('add-to-listing');
+// });
+
+// navItems.forEach((navItem) => {
+//   navItem.addEventListener('click', () => {
+//     sidebar.classList.toggle('show-sidebar');
+//   });
+// });
 
 const projects = [{
   name: 'Multi Post Stories',
