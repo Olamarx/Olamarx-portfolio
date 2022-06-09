@@ -336,3 +336,23 @@ array.forEach((one) => {
 `;
   showUp.insertAdjacentHTML('afterbegin', placeIt);
 });
+// Form Validation
+
+const form = document.querySelector('.contact');
+const error = document.querySelector('.throw-error');
+const mail = document.querySelector('.inputEmail');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (mail.value !== mail.value.toLowerCase()) {
+    error.style.display = 'block';
+    error.textContent = 'Kindly input lower case characters in all fields';
+    error.style.color = 'red';
+    error.style.fontFamily = 'Roboto, sans-serif';
+    error.style.margin = '24px auto';
+    error.style.border = '1px solid gray';
+  } else {
+    error.style.display = 'none';
+    form.submit();
+  }
+});
