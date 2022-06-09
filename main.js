@@ -1,58 +1,29 @@
-const menuBar = document.querySelector('.new-menu')
-const mainContainer = document.querySelector('.main-container')
-const mainNavbarLogo = document.querySelector('.main-navbar-logo')
-const listingOfUl = document.querySelector('.listing-of-ul')
-const closeMenu = document.querySelector('.close-menu')
-const headerAside = document.querySelector('.header-aside')
-const envelop = document.querySelector('.envelo')
-
+const menuBar = document.querySelector('.new-menu');
+const mainContainer = document.querySelector('.main-container');
+const mainNavbarLogo = document.querySelector('.main-navbar-logo');
+const listingOfUl = document.querySelector('.listing-of-ul');
+const closeMenu = document.querySelector('.close-menu');
+const headerAside = document.querySelector('.header-aside');
+const envelop = document.querySelector('.envelo');
 
 menuBar.addEventListener('click', () => {
-  menuBar.classList.toggle('active')
-  mainContainer.classList.toggle('active')
-  mainNavbarLogo.classList.toggle('active')
-  listingOfUl.classList.toggle('active')
-  closeMenu.classList.toggle('active')
-  headerAside.classList.toggle('active')
-  envelop.style.display = 'none'
-})
+  menuBar.classList.toggle('active');
+  mainContainer.classList.toggle('active');
+  mainNavbarLogo.classList.toggle('active');
+  listingOfUl.classList.toggle('active');
+  closeMenu.classList.toggle('active');
+  headerAside.classList.toggle('active');
+  envelop.style.display = 'none';
+});
 
 closeMenu.addEventListener('click', () => {
-  menuBar.classList.toggle('active')
-  mainContainer.classList.toggle('active')
-  mainNavbarLogo.classList.toggle('active')
-  listingOfUl.classList.toggle('active')
-  closeMenu.classList.toggle('active')
-  headerAside.classList.toggle('active')
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  menuBar.classList.toggle('active');
+  mainContainer.classList.toggle('active');
+  mainNavbarLogo.classList.toggle('active');
+  listingOfUl.classList.toggle('active');
+  closeMenu.classList.toggle('active');
+  headerAside.classList.toggle('active');
+});
 
 // const menu = document.querySelector('.menu');
 // const closeMenu = document.querySelector('.close-menu');
@@ -332,6 +303,48 @@ div1Popup.innerHTML = `<div> <div>
     </div>
     </div>
     </div>`;
+
+const array = [
+  {
+    title: 'Awesome Books',
+    image: './images/AwesomeBookBookSectionSPA.jpg',
+    description: 'This is a Single Page App(SMA) helps to save the books that are awesome to you. You can equally delete it at your time.',
+    seeLive: 'https://olamarx.github.io/Microverse-Awesome-Books/dist/',
+    seeSource: 'https://github.com/Olamarx/Microverse-Awesome-Books',
+  },
+  {
+    title: 'To-do List App',
+    image: './images/TodoList.jpg',
+    description: "This app helps in organizing one's day. It adds activities of the day and allow us to delete in group and individually.",
+    seeLive: 'https://olamarx.github.io/Todo-List/dist/',
+    seeSource: 'https://github.com/Olamarx/Todo-List',
+  },
+  {
+    title: 'Mockup tech learning site',
+    image: './images/TodoList.jpg',
+    description: "This app helps in organizing one's day. It adds activities of the day and allow us to delete in group and individually.",
+    seeLive: 'https://olamarx.github.io/Capstone-project/',
+    seeSource: 'https://github.com/Olamarx/Capstone-project',
+  },
+];
+const showUp = document.querySelector('.section-under-my-recent-works');
+
+array.forEach((one) => {
+  const placeIt = `
+    <div class="pro-art-major pro-art-major-first-up">
+              <div class="art">
+              <h2 class="art-data art-data-2">${one.title}</h2>
+              <h2 class="art-data-desktop-view">${one.title}</h2> 
+                <p class="daily-s-con">${one.description}</p>
+              </div>
+              <ul class="pro-t">
+                <li class="pro-"><a href="${one.seeLive}">Live Preview</a> </li>
+                <li class="pro-"> <a href="${one.seeSource}">Source Code</a> </li>
+                </ul>
+    <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button"></button></div>
+    `;
+  showUp.insertAdjacentHTML('afterbegin', placeIt);
+});
 
 const openBtn = document.querySelectorAll('[data-modal-target]');
 const popUpSection = document.querySelector('.pop-up-section');
