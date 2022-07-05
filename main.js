@@ -25,30 +25,6 @@ closeMenu.addEventListener('click', () => {
   headerAside.classList.toggle('active');
 });
 
-// const menu = document.querySelector('.menu');
-// const closeMenu = document.querySelector('.close-menu');
-// const sidebar = document.querySelector('.sidebar');
-// const addToListing = document.querySelector('.ul-listing');
-// const navItems = document.querySelectorAll('.navitem-sidebar');
-// const removeEnve = document.querySelector('.logo-portfolio-right-content-2');
-
-// menu.addEventListener('click', () => {
-//   sidebar.classList.toggle('show-sidebar');
-//   addToListing.classList.add('add-to-listing');
-//   removeEnve.style.display = 'none';
-// });
-
-// closeMenu.addEventListener('click', () => {
-//   sidebar.classList.toggle('show-sidebar');
-//   addToListing.classList.toggle('ul-listing');
-//   addToListing.classList.toggle('add-to-listing');
-// });
-
-// navItems.forEach((navItem) => {
-//   navItem.addEventListener('click', () => {
-//     sidebar.classList.toggle('show-sidebar');
-//   });
-// });
 
 const projects = [{
   name: 'Multi Post Stories',
@@ -148,7 +124,6 @@ const myProjects = [
   },
 ];
 
-// console.log(myProjects[4].tech[2])
 
 const headerWorks = document.querySelector('.w-container');
 
@@ -183,13 +158,11 @@ headerWorks.insertAdjacentHTML('afterend', `
             </ul>
                <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version-1" type="button">${projects[0].button}</button></div>
 
-
          <div class="pro-art-major pro-art-major-2">
           <div class="art">
            <h2 class="art-data art-data-2">${myProjects[1].title}</h2> 
            <h2 class="art-data-desktop-view">${myProjects[1].titledesktop}</h2> 
             <p class="daily-s-con">${myProjects[1].description}</p></div>
-
           
           <ul class="pro-t">
             <li class="pro-">${projects[0].technologies[1]}</li>
@@ -197,13 +170,11 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${myProjects[0].tech[2]}</li>
           </ul>
              <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
-
-
+             
         <div class="pro-art-major pro-art-major-3">
           <div class="art">
            <h2 class="art-data art-data-2">${myProjects[2].title}</h2> 
            <h2 class="art-data-desktop-view">${myProjects[2].titledesktop}</h2> 
-
 
             <p class="daily-s-con">${myProjects[2].description}</p>
           </div>
@@ -213,15 +184,12 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${myProjects[0].tech[2]}</li>
           </ul>
              <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
-
-
+             
         <div class="pro-art-major pro-art-major-4">
           <div class="art">
            <h2 class="art-data art-data-2">${myProjects[3].title}</h2>
            <h2 class="art-data-desktop-view">${myProjects[3].titledesktop}</h2> 
            
-           
-
             <p class="daily-s-con">${myProjects[3].description}</p>
           </div>
           <ul class="pro-t">
@@ -232,14 +200,11 @@ headerWorks.insertAdjacentHTML('afterend', `
 
              <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
 
-
          <div class="pro-art-major pro-art-major-5">
           <div class="art">
            <h2 class="art-data art-data-2">${myProjects[4].title}</h2>
            <h2 class="art-data-desktop-view">${myProjects[4].titledesktop}</h2> 
            
-           
-
             <p class="daily-s-con">${myProjects[4].description}</p></div>
           <ul class="pro-t">
             <li class="pro-">${projects[0].technologies[1]}</li> 
@@ -253,9 +218,7 @@ headerWorks.insertAdjacentHTML('afterend', `
            <h2 class="art-data art-data-2">${myProjects[5].title}</h2>
            <h2 class="art-data-desktop-view">${myProjects[5].titledesktop}</h2> 
            
-           
-
-            <p class="daily-s-con"> ${myProjects[5].description} </p>
+           <p class="daily-s-con"> ${myProjects[5].description} </p>
           </div>
           <ul class="pro-t">
             <li class="pro-">${projects[0].technologies[1]}</li>
@@ -361,4 +324,3 @@ openBtn.forEach((button) => {
     });
   });
 });
-// }
