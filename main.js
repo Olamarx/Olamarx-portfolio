@@ -25,31 +25,6 @@ closeMenu.addEventListener('click', () => {
   headerAside.classList.toggle('active');
 });
 
-// const menu = document.querySelector('.menu');
-// const closeMenu = document.querySelector('.close-menu');
-// const sidebar = document.querySelector('.sidebar');
-// const addToListing = document.querySelector('.ul-listing');
-// const navItems = document.querySelectorAll('.navitem-sidebar');
-// const removeEnve = document.querySelector('.logo-portfolio-right-content-2');
-
-// menu.addEventListener('click', () => {
-//   sidebar.classList.toggle('show-sidebar');
-//   addToListing.classList.add('add-to-listing');
-//   removeEnve.style.display = 'none';
-// });
-
-// closeMenu.addEventListener('click', () => {
-//   sidebar.classList.toggle('show-sidebar');
-//   addToListing.classList.toggle('ul-listing');
-//   addToListing.classList.toggle('add-to-listing');
-// });
-
-// navItems.forEach((navItem) => {
-//   navItem.addEventListener('click', () => {
-//     sidebar.classList.toggle('show-sidebar');
-//   });
-// });
-
 const projects = [{
   name: 'Multi Post Stories',
   desktopname: 'Keeping track of hundreds  of components website',
@@ -268,8 +243,6 @@ headerWorks.insertAdjacentHTML('afterend', `
   `);
 
 // Pop Up Section
-
-// for (let i = 0; i < projects.length; i++) {
 const div1Popup = document.createElement('div');
 div1Popup.innerHTML = `<div> <div>
       <div class="pop-up-header-times">
@@ -307,41 +280,47 @@ div1Popup.innerHTML = `<div> <div>
 const array = [
   {
     title: 'Awesome Books',
-    image: './images/AwesomeBookBookSectionSPA.jpg',
+    image: './images/AwesomeBookBookSectionSPA.png',
     description: 'This is a Single Page App(SMA) helps to save the books that are awesome to you. You can equally delete it at your time.',
     seeLive: 'https://olamarx.github.io/Microverse-Awesome-Books/dist/',
     seeSource: 'https://github.com/Olamarx/Microverse-Awesome-Books',
   },
   {
     title: 'To-do List App',
-    image: './images/TodoList.jpg',
+    image: './images/TodoList.png',
     description: "This app helps in organizing one's day. It adds activities of the day and allow us to delete in group and individually.",
     seeLive: 'https://olamarx.github.io/Todo-List/dist/',
     seeSource: 'https://github.com/Olamarx/Todo-List',
   },
   {
     title: 'Mockup tech learning site',
-    image: './images/TodoList.jpg',
+    image: './images/lum.jpg',
     description: "This app helps in organizing one's day. It adds activities of the day and allow us to delete in group and individually.",
     seeLive: 'https://olamarx.github.io/Capstone-project/',
     seeSource: 'https://github.com/Olamarx/Capstone-project',
+  },
+  {
+    title: 'Math Magician',
+    image: './images/react.png',
+    description: 'This is a Single Page App(SMA). A Math Magician app which has a calculator in it with some inspiring quotes.',
+    seeLive: 'https://math-magician.vercel.app',
+    seeSource: 'https://github.com/Olamarx/Math-Magicians',
   },
 ];
 const showUp = document.querySelector('.section-under-my-recent-works');
 
 array.forEach((one) => {
   const placeIt = `
-    <div class="pro-art-major pro-art-major-first-up">
+    <div class="pro-art-major pro-art-major-first-up" style="background-image: url(${one.image});">
               <div class="art">
-              <h2 class="art-data art-data-2">${one.title}</h2>
+              <h2 class="art-data art-data-2" style>${one.title}</h2>
               <h2 class="art-data-desktop-view">${one.title}</h2> 
                 <p class="daily-s-con">${one.description}</p>
               </div>
-              <ul class="pro-t">
+                 <ul class="pro-t">
                 <li class="pro-"><a href="${one.seeLive}">Live Preview</a> </li>
                 <li class="pro-"> <a href="${one.seeSource}">Source Code</a> </li>
                 </ul>
-    <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button"></button></div>
     `;
   showUp.insertAdjacentHTML('afterbegin', placeIt);
 });
