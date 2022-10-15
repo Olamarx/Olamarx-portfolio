@@ -123,7 +123,6 @@ const myProjects = [
   },
 ];
 
-
 const headerWorks = document.querySelector('.w-container');
 
 headerWorks.insertAdjacentHTML('afterend', `
