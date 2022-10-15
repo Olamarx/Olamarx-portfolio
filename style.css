@@ -1149,18 +1149,6 @@ footer img {
     color: white;
   }
 
-  .pro-art-major:nth-child(3) {
-    background-image: url(./images/AwesomeBookBookSectionSPA.png);
-  }
-
-  .pro-art-major:nth-child(2) {
-    background-image: url(./images/TodoList.png);
-  }
-
-  .pro-art-major:nth-child(1) {
-    background-image: url(./images/lum.jpg);
-  }
-
   .see-project-desktop-version {
     display: none;
   }
