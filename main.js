@@ -292,6 +292,13 @@ const array = [
     seeLive: 'https://math-magician.vercel.app',
     seeSource: 'https://github.com/Olamarx/Math-Magicians',
   },
+  {
+    title: 'Money App',
+    image: './images/money-app.png',
+    description: "This is a React app that uses Firebase for the backend. It authenticates the user and the user can login and log out. The user can also store data and delete the data according to user's wish.",
+    seeLive: 'https://money-tracking-ap.netlify.app',
+    seeSource: 'https://github.com/Olamarx/financial-tracker',
+  },
 ];
 const showUp = document.querySelector('.section-under-my-recent-works');
 
