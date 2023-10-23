@@ -139,7 +139,7 @@ headerWorks.insertAdjacentHTML('afterend', `
         <li class="exp">${projects[0].technologies[2]}</li>
         <li class="exp">${projects[0].technologies[3]}</li>
       </ul>
-      <button data-modal-target="#pop-up-section" class="see-pro" type="button">${projects[0].button}</button>
+      <button target="_blank" data-modal-target="#pop-up-section" class="see-pro" type="button">${projects[0].button}</button>
     </div>
   </div>
   
@@ -154,7 +154,7 @@ headerWorks.insertAdjacentHTML('afterend', `
               <li class="pro-">${projects[0].technologies[2]}</li>
               <li class="pro-">${myProjects[0].tech[2]} </li>
             </ul>
-               <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version-1" type="button">${projects[0].button}</button></div>
+               <button data-modal-target="#pop-up-section" target="_blank" class="see-project see-project-desktop-version-1" type="button">${projects[0].button}</button></div>
 
          <div class="pro-art-major pro-art-major-2">
           <div class="art">
@@ -167,7 +167,7 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${projects[0].technologies[2]}</li>
             <li class="pro-">${myProjects[0].tech[2]}</li>
           </ul>
-             <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
+             <button data-modal-target="#pop-up-section" target="_blank" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
              
         <div class="pro-art-major pro-art-major-3">
           <div class="art">
@@ -181,7 +181,7 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${projects[0].technologies[2]}</li>
             <li class="pro-">${myProjects[0].tech[2]}</li>
           </ul>
-             <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
+             <button data-modal-target="#pop-up-section" target="_blank" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
              
         <div class="pro-art-major pro-art-major-4">
           <div class="art">
@@ -196,7 +196,7 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${myProjects[0].tech[2]}</li>
             </ul>
 
-             <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
+             <button data-modal-target="#pop-up-section" target="_blank" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
 
          <div class="pro-art-major pro-art-major-5">
           <div class="art">
@@ -209,7 +209,7 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${projects[0].technologies[2]}</li>
             <li class="pro-">${myProjects[0].tech[2]}</li>
            </ul>
-             <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
+             <button data-modal-target="#pop-up-section" target="_blank" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button></div>
 
         <div class="pro-art-major pro-art-major-6">
           <div class="art">
@@ -223,7 +223,7 @@ headerWorks.insertAdjacentHTML('afterend', `
             <li class="pro-">${projects[0].technologies[2]}</li>
             <li class="pro-">${myProjects[0].tech[2]}</li>
            </ul>
-             <button data-modal-target="#pop-up-section" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button>
+             <button data-modal-target="#pop-up-section" target="_blank" class="see-project see-project-desktop-version" type="button">${projects[0].button}</button>
         </div>
       </div>
   `);
@@ -254,8 +254,8 @@ div1Popup.innerHTML = `<div> <div>
     ${projects[0].description}
     </h5>
     <ul class="see-live-and-source-btns">
-    <li><a href="${projects[1].link}"> <button class="link-list-btn"> See Live <img src="./images/livepreview.svg" alt="Live-preview"> </button> </a></li>
-    <li><a href="${projects[0].link}">  <button class="link-list-btn"> See Source <img src="./images/githubfont.svg" alt="Github">  </button>  </a></li>
+    <li><a href="${projects[1].link}"> <button target="_blank" class="link-list-btn"> See Live <img src="./images/livepreview.svg" alt="Live-preview"> </button> </a></li>
+    <li><a href="${projects[0].link}">  <button target="_blank" class="link-list-btn"> See Source <img src="./images/githubfont.svg" alt="Github">  </button>  </a></li>
     </ul>
     </div>
     </div>
@@ -311,8 +311,8 @@ array.forEach((one) => {
                 <p class="daily-s-con">${one.description}</p>
               </div>
                  <ul class="pro-t">
-                <li class="pro-"><a href="${one.seeLive}">Live Preview</a> </li>
-                <li class="pro-"> <a href="${one.seeSource}">Source Code</a> </li>
+                <li class="pro-"><a href="${one.seeLive}" target="_blank">Live Preview</a> </li>
+                <li class="pro-"> <a href="${one.seeSource}" target="_blank">Source Code</a> </li>
                 </ul>
     `;
   showUp.insertAdjacentHTML('afterbegin', placeIt);
